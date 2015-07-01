@@ -49,7 +49,7 @@ public class OpenandcloseBrowser {
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS);
 		this.ParnetHome=driver.getWindowHandle();
-		this.ParnetHome=driver.getWindowHandles();
+
 		
 		this.test="apple";
     }
