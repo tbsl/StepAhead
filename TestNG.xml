@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="SA Automation"   verbose="2">
+	<test name="Firefox Result">
+	<listeners>
+	    <listener class-name="util.OnFailure" />
+	    <listener class-name="org.uncommons.reportng.HTMLReporter" />
+  </listeners>
+  
+	    <parameter name="browser" value="FIREFOX"/> 
+  		<parameter name="baseURL" value="http://ecm.timesjobs.com/"/> 
+  		<parameter name="TestCase" value="TestCases.xslx"/> 
+  		<classes>      		
+      		<class name="testcase.Unregistered_User"/>    
+      	</classes>
+	</test> 
+</suite>

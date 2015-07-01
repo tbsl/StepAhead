@@ -1,0 +1,8 @@
+[info] Windows utilities loaded.
+Exception in thread "main" java.lang.NoClassDefFoundError: com/sun/awt/AWTUtilities
+	at org.sikuli.script.Win32Util.setWindowOpaque(Win32Util.java:84)
+	at org.sikuli.script.ScreenHighlighter.init(ScreenHighlighter.java:180)
+	at org.sikuli.script.ScreenHighlighter.<init>(ScreenHighlighter.java:293)
+	at org.sikuli.script.Screen.initBounds(Screen.java:105)
+	at org.sikuli.script.Screen.<init>(Screen.java:117)
+	at com.parent.main(parent.java:9)

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite verbose="2" name="Failed suite [JB Automation]">
+  <parameter name="baseURL" value="http://jobbuzz.timesjobs.com/"/>
+  <parameter name="TestCase" value="TestCases.xslx"/>
+  <parameter name="browser" value="FIREFOX"/>
+  <listeners>
+    <listener class-name="util.OnFailure"/>
+    <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+  </listeners>
+  <test name="Firefox Result(failed)">
+    <parameter name="baseURL" value="http://jobbuzz.timesjobs.com/"/>
+    <parameter name="TestCase" value="TestCases.xslx"/>
+    <parameter name="browser" value="FIREFOX"/>
+    <classes>
+      <class name="testcase.Unregistered_User">
+        <methods>
+          <include name="closeWindow"/>
+          <include name="openBrowser"/>
+          <include name="header_SA_click" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- testcase.Unregistered_User -->
+    </classes>
+  </test> <!-- Firefox Result(failed) -->
+</suite> <!-- Failed suite [JB Automation] -->

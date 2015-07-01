@@ -1,0 +1,33 @@
+oUnRegistere Flow-DONE
+  .Header Links-DONE
+  .Menu Items-DONE
+  .Posting Review in Already User Case
+  .Posting Review in Signup User Case
+  .Posting Review in FB case
+  .Posting Review in LI Case
+  .Posting Review in TJ Case
+  .Signout
+  .Searching for Jobs(Header)
+  .Searching for Companies(Header)
+  .Searching for Interview(Header)
+  .Searching for Jobs(Home)-DONE
+  .Searching for Companies(Home)-DONE
+  .Searching for Interview(Home)-DONE
+  .Posting Review 
+  .Searching Jobs (Along with Various Filters)
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+oRegistered Flow
