@@ -4,10 +4,14 @@ import org.openqa.selenium.By;
 
 public class Homepage {
 	//These are Header Links for other Verticals
-	public By h_tj=By.xpath("//a[.='TimesJobs']");
-	public By h_jb=By.xpath("//a[.='JobBuzz']");
-	public By h_sa=By.xpath("//a[.='StepAhead']");
-	public By h_tg=By.xpath("//a[.='TechGig']");
+	public By Contact_us=By.id("home_support");
+	public By Contact_US_LiveChat=By.xpath("//strong[.='Live Chat']");
+	public By Contact_US_Email=By.xpath("//strong[.='stepahead@timesjobs.com']");
+	public By Contact_US_Number=By.xpath("//strong[.='1860-500-5500']");
+	public By Contact_US_Query=By.xpath("//strong[.='Leave your Query']");
+	public By Contact_US_toolbar_Close=By.xpath("//a[@class='topbar_close']");
+	
+
 	
 	
 

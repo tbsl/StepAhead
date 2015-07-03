@@ -57,5 +57,14 @@ public class Useractions extends OpenandcloseBrowser{
 					
 					}
 	}
+	
+	public boolean isPresent(By loc)
+	{
+	return driver.findElement(loc).isDisplayed();
+	}
+
+
+	
+	
 
 }
