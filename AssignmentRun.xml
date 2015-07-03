@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Assignment App" verbose="2">
+<test name="Assignment ">
+    
+   <!--  <listeners>
+    <listener class-name="screenshot.ScreenshotOnFailure" />
+    <listener class-name="org.uncommons.reportng.HTMLReporter" />
+  </listeners> -->
+     
+
+
+
+<parameter name="browser" value="firefox"></parameter>
+<parameter name="baseURL" value="http://www.buzzyears.com/login"></parameter>
+
+<parameter name="XSL_LOC" value="\\resourse\\Regression_Suite-Assignments.xls"></parameter>
+<parameter name="XSL_SHT" value="Teacher"></parameter>
+<classes>
+<class name="Assignment_Testcases.Teacher_TestCase"></class>
+<class name="Assignment_Testcases.Student_TestCase"></class>
+</classes>
+</test>
+</suite>
+
+
+
+  

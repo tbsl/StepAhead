@@ -2,12 +2,12 @@
 <testng-results skipped="0" failed="3" total="3" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="SA Automation" duration-ms="28153" started-at="2015-07-01T05:47:54Z" finished-at="2015-07-01T05:48:23Z">
+  <suite name="SA Automation" duration-ms="43492" started-at="2015-07-03T05:18:57Z" finished-at="2015-07-03T05:19:40Z">
     <groups>
     </groups>
-    <test name="Firefox Result" duration-ms="28153" started-at="2015-07-01T05:47:54Z" finished-at="2015-07-01T05:48:23Z">
+    <test name="Firefox Result" duration-ms="43492" started-at="2015-07-03T05:18:57Z" finished-at="2015-07-03T05:19:40Z">
       <class name="testcase.Unregistered_User">
-        <test-method status="PASS" signature="openBrowser(java.lang.String, java.lang.String)[pri:0, instance:testcase.Unregistered_User@15d54a7]" name="openBrowser" is-config="true" duration-ms="28130" started-at="2015-07-01T11:17:54Z" finished-at="2015-07-01T11:18:23Z">
+        <test-method status="PASS" signature="openBrowser(java.lang.String, java.lang.String)[pri:0, instance:testcase.Unregistered_User@15d54a7]" name="openBrowser" is-config="true" duration-ms="43376" started-at="2015-07-03T10:48:57Z" finished-at="2015-07-03T10:49:40Z">
           <params>
             <param index="0">
               <value>
@@ -23,7 +23,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openBrowser -->
-        <test-method status="FAIL" signature="header_TJ_Click(int, int)[pri:0, instance:testcase.Unregistered_User@15d54a7]" name="header_TJ_Click" duration-ms="0" started-at="2015-07-01T11:18:23Z" data-provider="h_tj" finished-at="2015-07-01T11:18:23Z">
+        <test-method status="FAIL" signature="header_TJ_Click(int, int)[pri:0, instance:testcase.Unregistered_User@15d54a7]" name="header_TJ_Click" duration-ms="0" started-at="2015-07-03T10:49:40Z" data-provider="h_tj" finished-at="2015-07-03T10:49:40Z">
           <exception class="java.lang.RuntimeException">
             <message>
               <![CDATA[java.io.FileNotFoundException: C:\Users\susheel.thakur\workspace\JB_Automation\Extra\TestCases.xlsx (The system cannot find the path specified)]]>
@@ -70,7 +70,7 @@ Caused by: java.io.FileNotFoundException: C:\Users\susheel.thakur\workspace\JB_A
           <reporter-output>
           </reporter-output>
         </test-method> <!-- header_TJ_Click -->
-        <test-method status="FAIL" signature="header_JB_click(int, int)[pri:0, instance:testcase.Unregistered_User@15d54a7]" name="header_JB_click" duration-ms="0" started-at="2015-07-01T11:18:23Z" data-provider="h_jb" finished-at="2015-07-01T11:18:23Z">
+        <test-method status="FAIL" signature="header_JB_click(int, int)[pri:0, instance:testcase.Unregistered_User@15d54a7]" name="header_JB_click" duration-ms="0" started-at="2015-07-03T10:49:40Z" data-provider="h_jb" finished-at="2015-07-03T10:49:40Z">
           <exception class="java.lang.RuntimeException">
             <message>
               <![CDATA[java.io.FileNotFoundException: C:\Users\susheel.thakur\workspace\JB_Automation\Extra\TestCases.xlsx (The system cannot find the path specified)]]>
@@ -117,7 +117,7 @@ Caused by: java.io.FileNotFoundException: C:\Users\susheel.thakur\workspace\JB_A
           <reporter-output>
           </reporter-output>
         </test-method> <!-- header_JB_click -->
-        <test-method status="FAIL" signature="header_SA_click(int, int)[pri:0, instance:testcase.Unregistered_User@15d54a7]" name="header_SA_click" duration-ms="0" started-at="2015-07-01T11:18:23Z" data-provider="h_sa" finished-at="2015-07-01T11:18:23Z">
+        <test-method status="FAIL" signature="header_SA_click(int, int)[pri:0, instance:testcase.Unregistered_User@15d54a7]" name="header_SA_click" duration-ms="0" started-at="2015-07-03T10:49:40Z" data-provider="h_sa" finished-at="2015-07-03T10:49:40Z">
           <exception class="java.lang.RuntimeException">
             <message>
               <![CDATA[java.io.FileNotFoundException: C:\Users\susheel.thakur\workspace\JB_Automation\Extra\TestCases.xlsx (The system cannot find the path specified)]]>

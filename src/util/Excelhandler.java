@@ -31,6 +31,7 @@ public class Excelhandler {
 		FileOutputStream fos=new FileOutputStream("C:\\Users\\susheel.thakur\\workspace\\JB_Automation\\Extra\\TestCases.xlsx");
 		workbook.write(fos);
 		System.out.println("Excel Written");
+		workbook.close();
 	}
 	
 public static String readCell(int rowN,int colN) throws IOException
@@ -41,6 +42,8 @@ public static String readCell(int rowN,int colN) throws IOException
 	XSSFRow row=sheet.getRow(rowN);
 	Cell cell=row.getCell(colN);
 	String value= cell.getStringCellValue();
+	workbook.close();
+
 	return value;
 }
 
@@ -78,6 +81,7 @@ public static void cellWrite(int rowN,int colN,String DataW) throws IOException
 	
 	FileOutputStream fos=new FileOutputStream("C:\\Users\\susheel.thakur\\workspace\\JB_Automation\\Extra\\TestCases.xlsx");
 	workbook.write(fos);
+	workbook.close();
 	
 	System.out.println("Excel Written");
 }
