@@ -48,7 +48,7 @@
               <ul>
                 <li>
                   <a href="#" class="navigator-link " panel-name="test-xml-SA_Automation">
-                    <span>C:\Users\User\workspace\StepAhead\TestNG.xml</span>
+                    <span>C:\Users\susheel.thakur\appium_RND\StepAhead\TestNG.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -90,7 +90,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">3 methods, 3 failed,   </span>
+                    <span class="method-stats">4 methods, 3 failed,   1 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -101,20 +101,34 @@
                     <div class="method-list-content failed suite-SA_Automation">
                       <span>
                         <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-SA_Automation" title="testcase.Unregistered_User" hash-for-method="header_JB_click">header_JB_click</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-SA_Automation" title="testcase.Registeration" hash-for-method="closeRegisteration_Shutter(12, 8)">closeRegisteration_Shutter(12, 8)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-SA_Automation" title="testcase.Unregistered_User" hash-for-method="header_SA_click">header_SA_click</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-SA_Automation" title="testcase.Registeration" hash-for-method="user_Registeration">user_Registeration</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-SA_Automation" title="testcase.Unregistered_User" hash-for-method="header_TJ_Click">header_TJ_Click</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-SA_Automation" title="testcase.Registeration" hash-for-method="user_Registeration_Validations">user_Registeration_Validations</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-SA_Automation -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-SA_Automation" class="hide-methods passed suite-SA_Automation"> (hide)</a> <!-- hide-methods passed suite-SA_Automation -->
+                      <a href="#" panel-name="suite-SA_Automation" class="show-methods passed suite-SA_Automation"> (show)</a> <!-- show-methods passed suite-SA_Automation -->
+                    </span>
+                    <div class="method-list-content passed suite-SA_Automation">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-SA_Automation" title="testcase.Registeration" hash-for-method="openRegisteration(10, 8)">openRegisteration(10, 8)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-SA_Automation -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -129,163 +143,102 @@
           <div class="suite-SA_Automation-class-failed">
             <div class="main-panel-header rounded-window-top">
               <img src="failed.png"/>
-              <span class="class-name">testcase.Unregistered_User</span>
+              <span class="class-name">testcase.Registeration</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="header_JB_click">
-                  </a> <!-- header_JB_click -->
-                  <span class="method-name">header_JB_click</span>
-                  <div class="stack-trace">java.lang.RuntimeException: java.io.FileNotFoundException: C:\Users\susheel.thakur\workspace\JB_Automation\Extra\TestCases.xlsx (The system cannot find the path specified)
-	at org.testng.internal.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:161)
-	at org.testng.internal.Parameters.handleParameters(Parameters.java:429)
-	at org.testng.internal.Invoker.handleParameters(Invoker.java:1383)
-	at org.testng.internal.Invoker.createParameters(Invoker.java:1075)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1180)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
-	at org.testng.TestRunner.privateRun(TestRunner.java:767)
-	at org.testng.TestRunner.run(TestRunner.java:617)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
-	at org.testng.TestNG.run(TestNG.java:1057)
-	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
-Caused by: java.io.FileNotFoundException: C:\Users\susheel.thakur\workspace\JB_Automation\Extra\TestCases.xlsx (The system cannot find the path specified)
-	at java.io.FileInputStream.open(Native Method)
-	at java.io.FileInputStream.&lt;init&gt;(Unknown Source)
-	at java.io.FileInputStream.&lt;init&gt;(Unknown Source)
-	at util.Excelhandler.readCell(Excelhandler.java:38)
-	at dataprovider.homepage.h_jb(homepage.java:27)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
-	at org.testng.internal.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:135)
-	... 20 more
-
+                  <a name="closeRegisteration_Shutter(12, 8)">
+                  </a> <!-- closeRegisteration_Shutter(12, 8) -->
+                  <span class="method-name">closeRegisteration_Shutter</span>
+                  <span class="parameters">(12, 8)</span>
+                  <div class="stack-trace">org.openqa.selenium.ElementNotVisibleException: Element is not currently visible and so may not be interacted with
+Command duration or timeout: 10.15 seconds
+Build info: version: &apos;2.45.0&apos;, revision: &apos;5017cb8&apos;, time: &apos;2015-02-26 23:59:50&apos;
+System info: host: &apos;NODTBSD176AG&apos;, ip: &apos;10.150.240.220&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_45&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=33.0, platform=WINDOWS, nativeEvents=true, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 27ae73bf-f72b-4323-a555-836b9287b3c7
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:268)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:79)
+	at core.Useractions.click(Useractions.java:13)
+	at objects.homepage.close_registeration(homepage.java:39)
+	at testcase.Registeration.closeRegisteration_Shutter(Registeration.java:29)
+Caused by: org.openqa.selenium.ElementNotVisibleException: Element is not currently visible and so may not be interacted with
+Build info: version: &apos;2.45.0&apos;, revision: &apos;5017cb8&apos;, time: &apos;2015-02-26 23:59:50&apos;
+System info: host: &apos;NODTBSD176AG&apos;, ip: &apos;10.150.240.220&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_45&apos;
+Driver info: driver.version: unknown
+	at &lt;anonymous class&gt;.fxdriver.preconditions.visible(file:///C:/Users/SUSHEE~1.THA/AppData/Local/Temp/anonymous9193558631692732146webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:9587)
+	at &lt;anonymous class&gt;.DelayedCommand.prototype.checkPreconditions_(file:///C:/Users/SUSHEE~1.THA/AppData/Local/Temp/anonymous9193558631692732146webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12257)
+	at &lt;anonymous class&gt;.DelayedCommand.prototype.executeInternal_/h(file:///C:/Users/SUSHEE~1.THA/AppData/Local/Temp/anonymous9193558631692732146webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12274)
+	at &lt;anonymous class&gt;.fxdriver.Timer.prototype.setTimeout/&lt;.notify(file:///C:/Users/SUSHEE~1.THA/AppData/Local/Temp/anonymous9193558631692732146webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:603)
+... Removed 28 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="header_SA_click">
-                  </a> <!-- header_SA_click -->
-                  <span class="method-name">header_SA_click</span>
-                  <div class="stack-trace">java.lang.RuntimeException: java.io.FileNotFoundException: C:\Users\susheel.thakur\workspace\JB_Automation\Extra\TestCases.xlsx (The system cannot find the path specified)
-	at org.testng.internal.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:161)
-	at org.testng.internal.Parameters.handleParameters(Parameters.java:429)
-	at org.testng.internal.Invoker.handleParameters(Invoker.java:1383)
-	at org.testng.internal.Invoker.createParameters(Invoker.java:1075)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1180)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
-	at org.testng.TestRunner.privateRun(TestRunner.java:767)
-	at org.testng.TestRunner.run(TestRunner.java:617)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
-	at org.testng.TestNG.run(TestNG.java:1057)
-	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
-Caused by: java.io.FileNotFoundException: C:\Users\susheel.thakur\workspace\JB_Automation\Extra\TestCases.xlsx (The system cannot find the path specified)
-	at java.io.FileInputStream.open(Native Method)
-	at java.io.FileInputStream.&lt;init&gt;(Unknown Source)
-	at java.io.FileInputStream.&lt;init&gt;(Unknown Source)
-	at util.Excelhandler.readCell(Excelhandler.java:38)
-	at dataprovider.homepage.h_sa(homepage.java:38)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
-	at org.testng.internal.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:135)
-	... 20 more
-
+                  <a name="user_Registeration">
+                  </a> <!-- user_Registeration -->
+                  <span class="method-name">user_Registeration</span>
+                  <div class="stack-trace">org.testng.TestNGException: 
+DataProvider should be static: public java.lang.Object[][] dataprovider.Registeration_dp.user_registeration() throws java.io.IOException
+... Removed 22 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="header_TJ_Click">
-                  </a> <!-- header_TJ_Click -->
-                  <span class="method-name">header_TJ_Click</span>
-                  <div class="stack-trace">java.lang.RuntimeException: java.io.FileNotFoundException: C:\Users\susheel.thakur\workspace\JB_Automation\Extra\TestCases.xlsx (The system cannot find the path specified)
-	at org.testng.internal.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:161)
-	at org.testng.internal.Parameters.handleParameters(Parameters.java:429)
-	at org.testng.internal.Invoker.handleParameters(Invoker.java:1383)
-	at org.testng.internal.Invoker.createParameters(Invoker.java:1075)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1180)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
-	at org.testng.TestRunner.privateRun(TestRunner.java:767)
-	at org.testng.TestRunner.run(TestRunner.java:617)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
-	at org.testng.TestNG.run(TestNG.java:1057)
-	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
-Caused by: java.io.FileNotFoundException: C:\Users\susheel.thakur\workspace\JB_Automation\Extra\TestCases.xlsx (The system cannot find the path specified)
-	at java.io.FileInputStream.open(Native Method)
-	at java.io.FileInputStream.&lt;init&gt;(Unknown Source)
-	at java.io.FileInputStream.&lt;init&gt;(Unknown Source)
-	at util.Excelhandler.readCell(Excelhandler.java:38)
-	at dataprovider.homepage.h_tj(homepage.java:17)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
-	at org.testng.internal.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:135)
-	... 20 more
-
+                  <a name="user_Registeration_Validations">
+                  </a> <!-- user_Registeration_Validations -->
+                  <span class="method-name">user_Registeration_Validations</span>
+                  <div class="stack-trace">org.testng.TestNGException: 
+DataProvider should be static: public java.lang.Object[][] dataprovider.Registeration_dp.registeration_validations() throws java.io.IOException
+... Removed 22 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-SA_Automation-class-failed -->
+          <div class="suite-SA_Automation-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testcase.Registeration</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="openRegisteration(10, 8)">
+                  </a> <!-- openRegisteration(10, 8) -->
+                  <span class="method-name">openRegisteration</span>
+                  <span class="parameters">(10, 8)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-SA_Automation-class-passed -->
         </div> <!-- panel SA_Automation -->
         <div panel-name="test-xml-SA_Automation" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\User\workspace\StepAhead\TestNG.xml</span>
+            <span class="header-content">C:\Users\susheel.thakur\appium_RND\StepAhead\TestNG.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite verbose=&quot;2&quot; name=&quot;SA Automation&quot;&gt;
+&lt;suite name=&quot;SA Automation&quot;&gt;
   &lt;listeners&gt;
     &lt;listener class-name=&quot;util.OnFailure&quot;/&gt;
     &lt;listener class-name=&quot;org.uncommons.reportng.HTMLReporter&quot;/&gt;
   &lt;/listeners&gt;
   &lt;test name=&quot;Firefox Result&quot;&gt;
-    &lt;parameter name=&quot;TestCase&quot; value=&quot;TestCases.xslx&quot;/&gt;
     &lt;parameter name=&quot;baseURL&quot; value=&quot;http://ecm.timesjobs.com/&quot;/&gt;
+    &lt;parameter name=&quot;TestCase&quot; value=&quot;TestCases.xslx&quot;/&gt;
     &lt;parameter name=&quot;browser&quot; value=&quot;FIREFOX&quot;/&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;testcase.Unregistered_User&quot;/&gt;
+      &lt;class name=&quot;testcase.Registeration&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Firefox Result --&gt;
 &lt;/suite&gt; &lt;!-- SA Automation --&gt;
@@ -325,24 +278,28 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(3);
+data.addRows(4);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'header_SA_click')
-data.setCell(0, 2, 'testcase.Unregistered_User')
-data.setCell(0, 3, 0);
+data.setCell(0, 1, 'closeRegisteration_Shutter')
+data.setCell(0, 2, 'testcase.Registeration')
+data.setCell(0, 3, 14244);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'header_TJ_Click')
-data.setCell(1, 2, 'testcase.Unregistered_User')
-data.setCell(1, 3, 0);
+data.setCell(1, 1, 'openRegisteration')
+data.setCell(1, 2, 'testcase.Registeration')
+data.setCell(1, 3, 785);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'header_JB_click')
-data.setCell(2, 2, 'testcase.Unregistered_User')
+data.setCell(2, 1, 'user_Registeration')
+data.setCell(2, 2, 'testcase.Registeration')
 data.setCell(2, 3, 0);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'user_Registeration_Validations')
+data.setCell(3, 2, 'testcase.Registeration')
+data.setCell(3, 3, 0);
 window.suiteTableData['SA_Automation']= { tableData: data, tableDiv: 'times-div-SA_Automation'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 0 ms</span>
+              <span class="suite-total-time">Total running time: 15 seconds</span>
               <div id="times-div-SA_Automation">
               </div> <!-- times-div-SA_Automation -->
             </div> <!-- times-div -->
@@ -368,11 +325,29 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">testcase.Unregistered_User</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">testcase.Registeration</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">openBrowser(FIREFOX, http://ecm.timesjobs.com/)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-test before -->
+              <div class="test-method">
+                <span class="method-name">openRegisteration(10, 8)</span>
+                <span class="method-start">16100 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closeWindow([TestResult name=openRegisteration status=SUCCESS method=Registeration.openRegisteration(int, int)[p...)</span>
+                <span class="method-start">17241 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">closeRegisteration_Shutter(12, 8)</span>
+                <span class="method-start">17371 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closeWindow([TestResult name=closeRegisteration_Shutter status=FAILURE method=Registeration.closeRegisteration_S...)</span>
+                <span class="method-start">31907 ms</span>
+              </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->

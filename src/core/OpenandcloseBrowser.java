@@ -13,7 +13,7 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Parameters;
 
-import testcase.Unregistered_User;
+//import testcase.Unregistered_User;
 
 public class OpenandcloseBrowser {
 	public static WebDriver driver;
@@ -72,16 +72,7 @@ System.out.println("BEFORE A");
 	@AfterMethod
 	public void closeWindow(ITestResult tr)
 	{
-	if(tr.getMethod().getMethodName().equalsIgnoreCase("header_TJ_Click"))
-	{
-		closeBrowser();
-		new Unregistered_User().SwitchwindowHandles(ParnetHome);
-	}
-	else if(tr.getMethod().getMethodName().equalsIgnoreCase("header_SA_Click"))
-	{
-		closeBrowser();
-		new Unregistered_User().SwitchwindowHandles(ParnetHome);
-	}
+	
 	
 	
 	}

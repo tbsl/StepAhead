@@ -14,6 +14,7 @@ import org.apache.poi.xssf.usermodel.XSSFFont;
 import org.apache.poi.xssf.usermodel.XSSFRow;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+import org.testng.ITestContext;
 import org.testng.annotations.Parameters;
 
 public class Excelhandler {
@@ -28,7 +29,7 @@ public class Excelhandler {
 		XSSFRow row=sheet.getRow(100);
 		XSSFCell cell=row.createCell(2);
 		cell.setCellValue("OOPS");
-		FileOutputStream fos=new FileOutputStream("C:\\Users\\susheel.thakur\\workspace\\JB_Automation\\Extra\\TestCases.xlsx");
+		FileOutputStream fos=new FileOutputStream("C:\\Users\\susheel.thakur\\appium_RND\\StepAhead\\Extra\\TestCases.xlsx");
 		workbook.write(fos);
 		System.out.println("Excel Written");
 		workbook.close();
@@ -36,7 +37,7 @@ public class Excelhandler {
 	
 public static String readCell(int rowN,int colN) throws IOException
 {
-	FileInputStream fis=new FileInputStream("C:\\Users\\susheel.thakur\\workspace\\JB_Automation\\Extra\\TestCases.xlsx");
+	FileInputStream fis=new FileInputStream("C:\\Users\\susheel.thakur\\appium_RND\\StepAhead\\Extra\\TestCases.xlsx");
 	XSSFWorkbook workbook=new XSSFWorkbook(fis);
 	XSSFSheet sheet=workbook.getSheet("Sheet1");
 	XSSFRow row=sheet.getRow(rowN);
@@ -50,7 +51,7 @@ public static String readCell(int rowN,int colN) throws IOException
 public static void cellWrite(int rowN,int colN,String DataW) throws IOException
 	//public static void main(String args[]) throws IOException
 {
-	FileInputStream fis=new FileInputStream("C:\\Users\\susheel.thakur\\workspace\\JB_Automation\\Extra\\TestCases.xlsx");
+	FileInputStream fis=new FileInputStream("C:\\Users\\susheel.thakur\\appium_RND\\StepAhead\\Extra\\TestCases.xlsx");
 	XSSFWorkbook workbook=new XSSFWorkbook(fis);
 	XSSFSheet sheet=workbook.getSheet("Sheet1");
 	XSSFRow row=sheet.getRow(rowN);
@@ -79,11 +80,18 @@ public static void cellWrite(int rowN,int colN,String DataW) throws IOException
 				cell.setCellStyle(style);
 			}
 	
-	FileOutputStream fos=new FileOutputStream("C:\\Users\\susheel.thakur\\workspace\\JB_Automation\\Extra\\TestCases.xlsx");
+	FileOutputStream fos=new FileOutputStream("C:\\Users\\susheel.thakur\\appium_RND\\StepAhead\\Extra\\TestCases.xlsx");
 	workbook.write(fos);
 	workbook.close();
 	
 	System.out.println("Excel Written");
+}
+
+
+public void functionParam(ITestContext context)
+{
+
+
 }
 
 }
