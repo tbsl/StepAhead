@@ -3,14 +3,11 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="testcase.Unregistered_User">
+      <class name="testcase.Registeration">
         <methods>
-          <include name="submitQuery"/>
-          <include name="close_contact_us"/>
-          <include name="open_contact_us"/>
-          <include name="submitQuery_Validations"/>
+          <include name="user_Registeration_Validations"/>
         </methods>
-      </class> <!-- testcase.Unregistered_User -->
+      </class> <!-- testcase.Registeration -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

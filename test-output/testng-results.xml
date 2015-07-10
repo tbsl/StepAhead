@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="3" total="4" passed="1">
+<testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="SA Automation" duration-ms="31924" started-at="2015-07-08T12:36:09Z" finished-at="2015-07-08T12:36:40Z">
+  <suite name="SA Automation" duration-ms="17771" started-at="2015-07-10T11:27:52Z" finished-at="2015-07-10T11:28:10Z">
     <groups>
     </groups>
-    <test name="Firefox Result" duration-ms="31924" started-at="2015-07-08T12:36:09Z" finished-at="2015-07-08T12:36:40Z">
+    <test name="Firefox Result" duration-ms="17771" started-at="2015-07-10T11:27:52Z" finished-at="2015-07-10T11:28:10Z">
       <class name="testcase.Registeration">
-        <test-method status="PASS" signature="openBrowser(java.lang.String, java.lang.String)[pri:0, instance:testcase.Registeration@6fb554cc]" name="openBrowser" is-config="true" duration-ms="15244" started-at="2015-07-08T18:06:09Z" finished-at="2015-07-08T18:06:24Z">
+        <test-method status="PASS" signature="openBrowser(java.lang.String, java.lang.String)[pri:0, instance:testcase.Registeration@16df1832]" name="openBrowser" is-config="true" duration-ms="15702" started-at="2015-07-10T16:57:52Z" finished-at="2015-07-10T16:58:08Z">
           <params>
             <param index="0">
               <value>
@@ -23,11 +23,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openBrowser -->
-        <test-method status="PASS" signature="openRegisteration(int, int)[pri:0, instance:testcase.Registeration@6fb554cc]" name="openRegisteration" duration-ms="785" started-at="2015-07-08T18:06:25Z" data-provider="open_shutter_singnin" finished-at="2015-07-08T18:06:25Z">
+        <test-method status="PASS" signature="test_open(int, int)[pri:0, instance:testcase.Registeration@16df1832]" name="test_open" duration-ms="6" started-at="2015-07-10T16:58:09Z" data-provider="open_shutter" finished-at="2015-07-10T16:58:09Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[10]]>
+                <![CDATA[5]]>
               </value>
             </param>
             <param index="1">
@@ -38,184 +38,18 @@
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- openRegisteration -->
-        <test-method status="PASS" signature="closeWindow(org.testng.ITestResult)[pri:0, instance:testcase.Registeration@6fb554cc]" name="closeWindow" is-config="true" duration-ms="1" started-at="2015-07-08T18:06:26Z" finished-at="2015-07-08T18:06:26Z">
+        </test-method> <!-- test_open -->
+        <test-method status="PASS" signature="closeWindow(org.testng.ITestResult)[pri:0, instance:testcase.Registeration@16df1832]" name="closeWindow" is-config="true" duration-ms="0" started-at="2015-07-10T16:58:10Z" finished-at="2015-07-10T16:58:10Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=openRegisteration status=SUCCESS method=Registeration.openRegisteration(int, int)[pri:0, instance:testcase.Registeration@6fb554cc] output={null}]]]>
+                <![CDATA[[TestResult name=test_open status=SUCCESS method=Registeration.test_open(int, int)[pri:0, instance:testcase.Registeration@16df1832] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeWindow -->
-        <test-method status="FAIL" signature="closeRegisteration_Shutter(int, int)[pri:0, instance:testcase.Registeration@6fb554cc]" name="closeRegisteration_Shutter" duration-ms="14244" started-at="2015-07-08T18:06:26Z" data-provider="close_shutter_singnin" finished-at="2015-07-08T18:06:40Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[12]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[8]]>
-              </value>
-            </param>
-          </params>
-          <exception class="org.openqa.selenium.ElementNotVisibleException">
-            <message>
-              <![CDATA[Element is not currently visible and so may not be interacted with
-Command duration or timeout: 10.15 seconds
-Build info: version: '2.45.0', revision: '5017cb8', time: '2015-02-26 23:59:50'
-System info: host: 'NODTBSD176AG', ip: '10.150.240.220', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_45'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=33.0, platform=WINDOWS, nativeEvents=true, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: 27ae73bf-f72b-4323-a555-836b9287b3c7]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.ElementNotVisibleException: Element is not currently visible and so may not be interacted with
-Command duration or timeout: 10.15 seconds
-Build info: version: '2.45.0', revision: '5017cb8', time: '2015-02-26 23:59:50'
-System info: host: 'NODTBSD176AG', ip: '10.150.240.220', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_45'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=33.0, platform=WINDOWS, nativeEvents=true, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: 27ae73bf-f72b-4323-a555-836b9287b3c7
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:268)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:79)
-	at core.Useractions.click(Useractions.java:13)
-	at objects.homepage.close_registeration(homepage.java:39)
-	at testcase.Registeration.closeRegisteration_Shutter(Registeration.java:29)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
-	at org.testng.TestRunner.privateRun(TestRunner.java:767)
-	at org.testng.TestRunner.run(TestRunner.java:617)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
-	at org.testng.TestNG.run(TestNG.java:1057)
-	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
-Caused by: org.openqa.selenium.ElementNotVisibleException: Element is not currently visible and so may not be interacted with
-Build info: version: '2.45.0', revision: '5017cb8', time: '2015-02-26 23:59:50'
-System info: host: 'NODTBSD176AG', ip: '10.150.240.220', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_45'
-Driver info: driver.version: unknown
-	at <anonymous class>.fxdriver.preconditions.visible(file:///C:/Users/SUSHEE~1.THA/AppData/Local/Temp/anonymous9193558631692732146webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:9587)
-	at <anonymous class>.DelayedCommand.prototype.checkPreconditions_(file:///C:/Users/SUSHEE~1.THA/AppData/Local/Temp/anonymous9193558631692732146webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12257)
-	at <anonymous class>.DelayedCommand.prototype.executeInternal_/h(file:///C:/Users/SUSHEE~1.THA/AppData/Local/Temp/anonymous9193558631692732146webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12274)
-	at <anonymous class>.fxdriver.Timer.prototype.setTimeout/<.notify(file:///C:/Users/SUSHEE~1.THA/AppData/Local/Temp/anonymous9193558631692732146webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:603)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.ElementNotVisibleException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeRegisteration_Shutter -->
-        <test-method status="PASS" signature="closeWindow(org.testng.ITestResult)[pri:0, instance:testcase.Registeration@6fb554cc]" name="closeWindow" is-config="true" duration-ms="0" started-at="2015-07-08T18:06:40Z" finished-at="2015-07-08T18:06:40Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=closeRegisteration_Shutter status=FAILURE method=Registeration.closeRegisteration_Shutter(int, int)[pri:0, instance:testcase.Registeration@6fb554cc] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeWindow -->
-        <test-method status="FAIL" signature="user_Registeration_Validations(int, int)[pri:0, instance:testcase.Registeration@6fb554cc]" name="user_Registeration_Validations" duration-ms="0" started-at="2015-07-08T18:06:40Z" data-provider="registeration_validations" finished-at="2015-07-08T18:06:40Z">
-          <exception class="org.testng.TestNGException">
-            <message>
-              <![CDATA[
-DataProvider should be static: public java.lang.Object[][] dataprovider.Registeration_dp.registeration_validations() throws java.io.IOException]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.testng.TestNGException: 
-DataProvider should be static: public java.lang.Object[][] dataprovider.Registeration_dp.registeration_validations() throws java.io.IOException
-	at org.testng.internal.Parameters.findDataProvider(Parameters.java:331)
-	at org.testng.internal.Parameters.findDataProvider(Parameters.java:265)
-	at org.testng.internal.Parameters.handleParameters(Parameters.java:417)
-	at org.testng.internal.Invoker.handleParameters(Invoker.java:1383)
-	at org.testng.internal.Invoker.createParameters(Invoker.java:1075)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1180)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
-	at org.testng.TestRunner.privateRun(TestRunner.java:767)
-	at org.testng.TestRunner.run(TestRunner.java:617)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
-	at org.testng.TestNG.run(TestNG.java:1057)
-	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.testng.TestNGException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- user_Registeration_Validations -->
-        <test-method status="FAIL" signature="user_Registeration(int, int, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testcase.Registeration@6fb554cc]" name="user_Registeration" duration-ms="0" started-at="2015-07-08T18:06:40Z" data-provider="user_registeration" finished-at="2015-07-08T18:06:40Z">
-          <exception class="org.testng.TestNGException">
-            <message>
-              <![CDATA[
-DataProvider should be static: public java.lang.Object[][] dataprovider.Registeration_dp.user_registeration() throws java.io.IOException]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.testng.TestNGException: 
-DataProvider should be static: public java.lang.Object[][] dataprovider.Registeration_dp.user_registeration() throws java.io.IOException
-	at org.testng.internal.Parameters.findDataProvider(Parameters.java:331)
-	at org.testng.internal.Parameters.findDataProvider(Parameters.java:265)
-	at org.testng.internal.Parameters.handleParameters(Parameters.java:417)
-	at org.testng.internal.Invoker.handleParameters(Invoker.java:1383)
-	at org.testng.internal.Invoker.createParameters(Invoker.java:1075)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1180)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
-	at org.testng.TestRunner.privateRun(TestRunner.java:767)
-	at org.testng.TestRunner.run(TestRunner.java:617)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
-	at org.testng.TestNG.run(TestNG.java:1057)
-	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.testng.TestNGException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- user_Registeration -->
       </class> <!-- testcase.Registeration -->
     </test> <!-- Firefox Result -->
   </suite> <!-- SA Automation -->

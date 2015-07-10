@@ -36,7 +36,7 @@ public class homepage extends Useractions{
 	public void close_registeration() throws InterruptedException
 	{
 		Thread.sleep(4000);
-	click(new Homepage().Contact_US_toolbar_Close);
+	click(new Homepage().Close_icon);
 	}
 	
 }

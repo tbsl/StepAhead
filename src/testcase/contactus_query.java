@@ -19,7 +19,7 @@ public class contactus_query extends homepage{
 	@Test(priority=1,dataProvider="open_shutter",dataProviderClass=homepage_dp.class)
 	public void open_contact_us(int row,int col)
 	{
-		
+		System.out.println("Aaaaaaaaaaaaaaaaaaaa");
 	new homepage().open_contact_us();
 	SoftAssert sa=new SoftAssert();
 	sa.assertEquals(gettext(new Homepage().Contact_US_Email), "stepahead@timesjobs.com");

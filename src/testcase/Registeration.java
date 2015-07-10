@@ -12,7 +12,7 @@ import elements.Homepage;
 
 public class Registeration extends homepage {
 
-	@Test(priority=1,dataProvider="open_shutter_singnin",dataProviderClass=homepage_dp.class)
+/*	@Test(priority=1,dataProvider="open_shutter_singnin",dataProviderClass=homepage_dp.class)
 	public void openRegisteration(int row,int col)
 	{
 	new homepage().open_registeration();
@@ -28,21 +28,47 @@ public class Registeration extends homepage {
 	{
 	new homepage().close_registeration();
 	SoftAssert sa=new SoftAssert();
-	/*sa.assertEquals(isPresent(new Homepage().Signin_email),false, "Email is not visible");
+	sa.assertEquals(isPresent(new Homepage().Signin_email),false, "Email is not visible");
 	sa.assertEquals(isPresent(new Homepage().signin_password),false, "password is not visible");
 	sa.assertEquals(isPresent(new Homepage().signIn_btn),false, "Signin Button is not visible");
-	sa.assertAll();*/
+	sa.assertAll();
+	}*/
+	
+	
+	@Test(dataProvider="open_shutter",dataProviderClass=homepage_dp.class)	
+	public void test_open(int row,int col){
+		System.out.println("aa");
 	}
+
 	
-	
-	@Test(priority=3,dataProvider="registeration_validations",dataProviderClass=Registeration_dp.class)
-	public void user_Registeration_Validations(int row,int col)
+	/*
+	@Test(dataProvider="registeration_validations",dataProviderClass=Registeration_dp.class)
+	public void help(int row,int col)
 	{
+		System.out.println("aaaaaaa");
 		new homepage().open_registeration();
 		new homepage().open_registeration_form();
 		new Registeration_o().registeration_Validations();
 		
-		SoftAssert sa=new SoftAssert();
+	SoftAssert sa=new SoftAssert();
+	sa.assertEquals(isPresent(new Homepage().Signin_email),false, "Email is not visible");
+	sa.assertEquals(isPresent(new Homepage().signin_password),false, "password is not visible");
+	sa.assertEquals(isPresent(new Homepage().signIn_btn),false, "Signin Button is not visible");
+	sa.assertAll();
+
+	}
+	
+	*/
+	
+	/*@Test(priority=3,dataProvider="registeration_validations",dataProviderClass=Registeration_dp.class,alwaysRun=true)
+	public void user_Registeration_Validations(int row,int col)
+	{
+		System.out.println("in 3");
+		new homepage().open_registeration();
+		new homepage().open_registeration_form();
+		new Registeration_o().registeration_Validations();
+		
+	SoftAssert sa=new SoftAssert();
 	sa.assertEquals(isPresent(new Homepage().Signin_email),false, "Email is not visible");
 	sa.assertEquals(isPresent(new Homepage().signin_password),false, "password is not visible");
 	sa.assertEquals(isPresent(new Homepage().signIn_btn),false, "Signin Button is not visible");
@@ -63,6 +89,6 @@ public class Registeration extends homepage {
 	sa.assertAll();
 	}
 	
-	
+*/	
 	
 }

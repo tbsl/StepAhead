@@ -21,8 +21,10 @@ try {
 Process exec = Runtime.getRuntime().exec(wget_command);
 int exitVal = exec.waitFor();
 System.out.println("Exit value: " + exitVal);
-} catch (InterruptedException | IOException ex) {
-System.out.println(ex.toString());
+} catch (InterruptedException ex) {
+	System.out.println(ex.toString());
+} catch(IOException ex){
+	System.out.println(ex.toString());
 }
 driver.quit();
 }
