@@ -9,27 +9,27 @@ import util.Excelhandler;
 public class Registeration_dp {
 	
 	@DataProvider
-	public Object[][] registeration_validations() throws IOException
+	public static Object[][] registeration_validations() throws IOException
 	{
 		String data=Excelhandler.readCell(13,7);
 		
 		String[] datavalues=data.split(",");
-		String row=datavalues[0];
-		String col=datavalues[1];
+		int row=Integer.parseInt(datavalues[0]);
+		int col=Integer.parseInt(datavalues[1]);
 		
 		return new Object[][]{{row,col}};
 	}
 	
 	@DataProvider
-	public Object[][] user_registeration() throws IOException
+	public static Object[][] user_registeration() throws IOException
 	{
 		String outputdata=Excelhandler.readCell(14,7);
 		
 		String[] datavalues=outputdata.split(",");
-		String out_row=datavalues[0];
-		String out_col=datavalues[1];
+		int out_row=Integer.parseInt(datavalues[0]);
+		int out_col=Integer.parseInt(datavalues[1]);
 		
-		String inputdata=Excelhandler.readCell(13,7);
+		String inputdata=Excelhandler.readCell(14,6);
 		String[] inputvalues=inputdata.split(",");
 		String name=inputvalues[0];
 		String email=inputvalues[1];

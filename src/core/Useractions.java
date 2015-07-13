@@ -4,9 +4,11 @@ import java.util.Set;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
+import org.testng.asserts.SoftAssert;
 
 public class Useractions extends OpenandcloseBrowser{
-	
+	protected SoftAssert sa=new SoftAssert();
+
 	
 	public void click(By loc)
 	{
@@ -33,6 +35,10 @@ public class Useractions extends OpenandcloseBrowser{
 	{
 	return driver.getWindowHandle();	
 		
+	}
+	public String getTitle()
+	{
+		return driver.getTitle();
 	}
 	
 	public void closeWindow()
