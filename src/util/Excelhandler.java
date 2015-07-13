@@ -37,7 +37,7 @@ public class Excelhandler {
 	
 public static String readCell(int rowN,int colN) throws IOException
 {
-	FileInputStream fis=new FileInputStream("C:\\Users\\susheel.thakur\\appium_RND\\StepAhead\\Extra\\TestCases.xlsx");
+	FileInputStream fis=new FileInputStream(System.getProperty("user.dir")+"\\Extra\\TestCases.xlsx");
 	XSSFWorkbook workbook=new XSSFWorkbook(fis);
 	XSSFSheet sheet=workbook.getSheet("Sheet1");
 	XSSFRow row=sheet.getRow(rowN);
@@ -51,7 +51,7 @@ public static String readCell(int rowN,int colN) throws IOException
 public static void cellWrite(int rowN,int colN,String DataW) throws IOException
 	//public static void main(String args[]) throws IOException
 {
-	FileInputStream fis=new FileInputStream("C:\\Users\\susheel.thakur\\appium_RND\\StepAhead\\Extra\\TestCases.xlsx");
+	FileInputStream fis=new FileInputStream(System.getProperty("user.dir")+"\\Extra\\TestCases.xlsx");
 	XSSFWorkbook workbook=new XSSFWorkbook(fis);
 	XSSFSheet sheet=workbook.getSheet("Sheet1");
 	XSSFRow row=sheet.getRow(rowN);
@@ -80,7 +80,7 @@ public static void cellWrite(int rowN,int colN,String DataW) throws IOException
 				cell.setCellStyle(style);
 			}
 	
-	FileOutputStream fos=new FileOutputStream("C:\\Users\\susheel.thakur\\appium_RND\\StepAhead\\Extra\\TestCases.xlsx");
+	FileOutputStream fos=new FileOutputStream(System.getProperty("user.dir")+"\\Extra\\TestCases.xlsx");
 	workbook.write(fos);
 	workbook.close();
 	
