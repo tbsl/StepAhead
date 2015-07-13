@@ -29,7 +29,7 @@ public class Excelhandler {
 		XSSFRow row=sheet.getRow(100);
 		XSSFCell cell=row.createCell(2);
 		cell.setCellValue("OOPS");
-		FileOutputStream fos=new FileOutputStream("C:\\Users\\susheel.thakur\\appium_RND\\StepAhead\\Extra\\TestCases.xlsx");
+		FileOutputStream fos=new FileOutputStream(System.getProperty("user.dir")+"\\Extra\\TestCases.xlsx");
 		workbook.write(fos);
 		System.out.println("Excel Written");
 		workbook.close();
