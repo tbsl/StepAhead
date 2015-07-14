@@ -10,7 +10,7 @@
   		<parameter name="baseURL" value="http://ecm.timesjobs.com/"/> 
   		<parameter name="TestCase" value="TestCases.xslx"/> 
   		<classes>      		
- 	 <class name="testcase.contactus_query"/>
+ 	 			<class name="testcase.contactus_query"/>
       	      	<class name="testcase.Registeration"/> 
       		    
       	

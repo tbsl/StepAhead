@@ -33,6 +33,34 @@ public class homepage extends Useractions{
 	}
 	
 	
+	public void open_forgetpassword(String Email)
+	{
+	click(new Homepage().forget_pwd);	
+	//driver.switchTo().frame("GB_frame1");
+	//driver.switchTo().frame("GB_frame");
+	//type(new Forget_pwd_e().email,Email);
+	
+
+	}
+	
+	public void cancel_forgetpassword(String Email)
+	{
+	click(new Homepage().forget_pwd);	
+	driver.switchTo().frame("GB_frame1");
+	driver.switchTo().frame("GB_frame");
+	click(new Forget_pwd_e().cancel);
+	//type(new Forget_pwd_e().email,Email);
+	}
+	
+	public void submit_forgetpassword(String Email)
+	{
+	click(new Homepage().forget_pwd);	
+	driver.switchTo().frame("GB_frame1");
+	driver.switchTo().frame("GB_frame");
+	
+	type(new Forget_pwd_e().email,Email);
+	}
+	
 	public void close_registeration() throws InterruptedException
 	{
 		Thread.sleep(4000);

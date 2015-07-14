@@ -44,10 +44,13 @@ public class Useractions extends OpenandcloseBrowser{
 	public void closeWindow()
 	{
 	String activeWindow=getActiveWindow();
-	
 	Set<String> allwindow = driver.getWindowHandles();
+	}
 	
-	
+	public void navigate(String url)
+	{
+		String finalURL;
+	 driver.navigate().to(finalURL);	
 	}
 	public void SwitchwindowHandles(String data)
 	{

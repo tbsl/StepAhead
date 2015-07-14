@@ -2,13 +2,16 @@ package testcase;
 
 import objects.Registeration_o;
 import objects.homepage;
+import objects.homepage_loggedin_o;
 
+import org.openqa.selenium.By;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
 import dataprovider.Registeration_dp;
 import dataprovider.homepage_dp;
 import elements.Homepage;
+import elements.Homepage_loggedin_e;
 import elements.Registeration_e;
 
 public class Registeration extends homepage {
@@ -52,13 +55,35 @@ public class Registeration extends homepage {
 	{
 		
 		new Registeration_o().user_registeration(Name, Email, password, Confirm_password, Mobile);
+		sa.assertEquals(isPresent(new Homepage_loggedin_e().MyAccount),true,"You are not on correct page");
+		sa.assertAll();
 		
-	sa.assertEquals(isPresent(new Homepage().Signin_email),false, "Email is not visible");
-	sa.assertEquals(isPresent(new Homepage().signin_password),false, "password is not visible");
-	sa.assertEquals(isPresent(new Homepage().signIn_btn),false, "Signin Button is not visible");
-	sa.assertAll();
+	}
+	
+	@Test(priority=5,dataProvider="logout",dataProviderClass=Registeration_dp.class)
+	public void logout(int row,int col)
+	{
+	new homepage_loggedin_o().open_Myaccount();
+	new homepage_loggedin_o().logout();
+	sa.assertEquals(driver.getTitle(),"Resume Writing Services | Profile Verification | Career Astrology | StepAhead","You are on WRONG Page.Logout is redirecting wrong");
+	}
+	
+	@Test(priority=5,dataProvider="forgetPassword",dataProviderClass=Registeration_dp.class)
+	public void forgetPassword(int row,int col,String email)
+	{
+		System.out.println("Email is"+email);
+		new homepage().open_registeration();
+		new homepage().submit_forgetpassword(email);
+	}
+	
+	@Test(priority=5,dataProvider="forgetPassword",dataProviderClass=Registeration_dp.class)
+	public void email_verification()
+	{
+		navigate("https://mailinator.com/inbox.jsp?to=sunil1");
 	}
 	
 
+	
+	
 	
 }

@@ -15,21 +15,14 @@
     <classes>
       <class name="testcase.contactus_query">
         <methods>
-          <include name="submitQuery" invocation-numbers="0"/>
           <include name="closeWindow"/>
-          <include name="close_contact_us" invocation-numbers="0"/>
           <include name="openBrowser"/>
-          <include name="open_contact_us" invocation-numbers="0"/>
-          <include name="submitQuery_Validations" invocation-numbers="0"/>
         </methods>
       </class> <!-- testcase.contactus_query -->
       <class name="testcase.Registeration">
         <methods>
-          <include name="closeRegisteration_Shutter" invocation-numbers="0"/>
-          <include name="openRegisteration" invocation-numbers="0"/>
           <include name="closeWindow"/>
           <include name="user_Registeration" invocation-numbers="0"/>
-          <include name="user_Registeration_Validations" invocation-numbers="0"/>
         </methods>
       </class> <!-- testcase.Registeration -->
     </classes>
