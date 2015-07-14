@@ -56,6 +56,7 @@ public class Registeration_dp {
 		
 		String outputdata=Excelhandler.readCell(16,7);
 		String[] datavalues=outputdata.split(",");
+		
 		int out_row=Integer.parseInt(datavalues[0]);
 		int out_col=Integer.parseInt(datavalues[1]);
 		String inputdata=Excelhandler.readCell(14,6);

@@ -47,11 +47,15 @@ public class Useractions extends OpenandcloseBrowser{
 	Set<String> allwindow = driver.getWindowHandles();
 	}
 	
-	public void navigate(String url)
+	public void navigate_to_mailinator(String url)
 	{
-		String finalURL;
+		String[] name=url.split("@");
+		String a=name[0];
+		String finalURL="https://mailinator.com/inbox.jsp?to="+a;
+		System.out.println(finalURL);
 	 driver.navigate().to(finalURL);	
 	}
+	
 	public void SwitchwindowHandles(String data)
 	{
 		Set<String> windowHandles = driver.getWindowHandles();

@@ -22,7 +22,7 @@
       <class name="testcase.Registeration">
         <methods>
           <include name="closeWindow"/>
-          <include name="user_Registeration" invocation-numbers="0"/>
+          <include name="forgetPassword" invocation-numbers="0"/>
         </methods>
       </class> <!-- testcase.Registeration -->
     </classes>

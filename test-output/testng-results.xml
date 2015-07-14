@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="8" passed="8">
+<testng-results skipped="0" failed="0" total="11" passed="11">
   <reporter-output>
   </reporter-output>
-  <suite name="SA Automation" duration-ms="47667" started-at="2015-07-14T05:26:25Z" finished-at="2015-07-14T05:27:13Z">
+  <suite name="SA Automation" duration-ms="66962" started-at="2015-07-14T12:39:05Z" finished-at="2015-07-14T12:40:12Z">
     <groups>
     </groups>
-    <test name="Firefox Result" duration-ms="47667" started-at="2015-07-14T05:26:25Z" finished-at="2015-07-14T05:27:13Z">
+    <test name="Firefox Result" duration-ms="66962" started-at="2015-07-14T12:39:05Z" finished-at="2015-07-14T12:40:12Z">
       <class name="testcase.Registeration">
-        <test-method status="PASS" signature="openRegisteration(int, int)[pri:0, instance:testcase.Registeration@3295cfbe]" name="openRegisteration" duration-ms="1825" started-at="2015-07-14T10:56:57Z" data-provider="open_shutter_singnin" finished-at="2015-07-14T10:56:59Z">
+        <test-method status="PASS" signature="openRegisteration(int, int)[pri:0, instance:testcase.Registeration@1f950198]" name="openRegisteration" duration-ms="624" started-at="2015-07-14T18:09:42Z" data-provider="open_shutter_singnin" finished-at="2015-07-14T18:09:42Z">
           <params>
             <param index="0">
               <value>
@@ -23,18 +23,18 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openRegisteration -->
-        <test-method status="PASS" signature="closeWindow(org.testng.ITestResult)[pri:0, instance:testcase.Registeration@3295cfbe]" name="closeWindow" is-config="true" duration-ms="0" started-at="2015-07-14T10:56:59Z" finished-at="2015-07-14T10:56:59Z">
+        <test-method status="PASS" signature="closeWindow(org.testng.ITestResult)[pri:0, instance:testcase.Registeration@1f950198]" name="closeWindow" is-config="true" duration-ms="1" started-at="2015-07-14T18:09:42Z" finished-at="2015-07-14T18:09:42Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=openRegisteration status=SUCCESS method=Registeration.openRegisteration(int, int)[pri:0, instance:testcase.Registeration@3295cfbe] output={null}]]]>
+                <![CDATA[[TestResult name=openRegisteration status=SUCCESS method=Registeration.openRegisteration(int, int)[pri:0, instance:testcase.Registeration@1f950198] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeWindow -->
-        <test-method status="PASS" signature="closeRegisteration_Shutter(int, int)[pri:0, instance:testcase.Registeration@3295cfbe]" name="closeRegisteration_Shutter" duration-ms="4651" started-at="2015-07-14T10:56:59Z" data-provider="close_shutter_singnin" finished-at="2015-07-14T10:57:04Z">
+        <test-method status="PASS" signature="closeRegisteration_Shutter(int, int)[pri:0, instance:testcase.Registeration@1f950198]" name="closeRegisteration_Shutter" duration-ms="4539" started-at="2015-07-14T18:09:42Z" data-provider="close_shutter_singnin" finished-at="2015-07-14T18:09:47Z">
           <params>
             <param index="0">
               <value>
@@ -50,18 +50,18 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeRegisteration_Shutter -->
-        <test-method status="PASS" signature="closeWindow(org.testng.ITestResult)[pri:0, instance:testcase.Registeration@3295cfbe]" name="closeWindow" is-config="true" duration-ms="0" started-at="2015-07-14T10:57:04Z" finished-at="2015-07-14T10:57:04Z">
+        <test-method status="PASS" signature="closeWindow(org.testng.ITestResult)[pri:0, instance:testcase.Registeration@1f950198]" name="closeWindow" is-config="true" duration-ms="0" started-at="2015-07-14T18:09:47Z" finished-at="2015-07-14T18:09:47Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=closeRegisteration_Shutter status=SUCCESS method=Registeration.closeRegisteration_Shutter(int, int)[pri:0, instance:testcase.Registeration@3295cfbe] output={null}]]]>
+                <![CDATA[[TestResult name=closeRegisteration_Shutter status=SUCCESS method=Registeration.closeRegisteration_Shutter(int, int)[pri:0, instance:testcase.Registeration@1f950198] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeWindow -->
-        <test-method status="PASS" signature="user_Registeration_Validations(int, int)[pri:0, instance:testcase.Registeration@3295cfbe]" name="user_Registeration_Validations" duration-ms="7132" started-at="2015-07-14T10:57:04Z" data-provider="registeration_validations" finished-at="2015-07-14T10:57:11Z">
+        <test-method status="PASS" signature="user_Registeration_Validations(int, int)[pri:0, instance:testcase.Registeration@1f950198]" name="user_Registeration_Validations" duration-ms="7844" started-at="2015-07-14T18:09:47Z" data-provider="registeration_validations" finished-at="2015-07-14T18:09:55Z">
           <params>
             <param index="0">
               <value>
@@ -77,18 +77,18 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- user_Registeration_Validations -->
-        <test-method status="PASS" signature="closeWindow(org.testng.ITestResult)[pri:0, instance:testcase.Registeration@3295cfbe]" name="closeWindow" is-config="true" duration-ms="0" started-at="2015-07-14T10:57:11Z" finished-at="2015-07-14T10:57:11Z">
+        <test-method status="PASS" signature="closeWindow(org.testng.ITestResult)[pri:0, instance:testcase.Registeration@1f950198]" name="closeWindow" is-config="true" duration-ms="0" started-at="2015-07-14T18:09:55Z" finished-at="2015-07-14T18:09:55Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=user_Registeration_Validations status=SUCCESS method=Registeration.user_Registeration_Validations(int, int)[pri:0, instance:testcase.Registeration@3295cfbe] output={null}]]]>
+                <![CDATA[[TestResult name=user_Registeration_Validations status=SUCCESS method=Registeration.user_Registeration_Validations(int, int)[pri:0, instance:testcase.Registeration@1f950198] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeWindow -->
-        <test-method status="PASS" signature="user_Registeration(int, int, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testcase.Registeration@3295cfbe]" name="user_Registeration" duration-ms="1306" started-at="2015-07-14T10:57:11Z" data-provider="user_registeration" finished-at="2015-07-14T10:57:13Z">
+        <test-method status="PASS" signature="user_Registeration(int, int, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testcase.Registeration@1f950198]" name="user_Registeration" duration-ms="7742" started-at="2015-07-14T18:09:55Z" data-provider="user_registeration" finished-at="2015-07-14T18:10:03Z">
           <params>
             <param index="0">
               <value>
@@ -107,7 +107,7 @@
             </param>
             <param index="3">
               <value>
-                <![CDATA[sunil2@mailinator.com]]>
+                <![CDATA[sunil19@mailinator.com]]>
               </value>
             </param>
             <param index="4">
@@ -129,11 +129,102 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- user_Registeration -->
-        <test-method status="PASS" signature="closeWindow(org.testng.ITestResult)[pri:0, instance:testcase.Registeration@3295cfbe]" name="closeWindow" is-config="true" duration-ms="0" started-at="2015-07-14T10:57:13Z" finished-at="2015-07-14T10:57:13Z">
+        <test-method status="PASS" signature="closeWindow(org.testng.ITestResult)[pri:0, instance:testcase.Registeration@1f950198]" name="closeWindow" is-config="true" duration-ms="0" started-at="2015-07-14T18:10:03Z" finished-at="2015-07-14T18:10:03Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=user_Registeration status=SUCCESS method=Registeration.user_Registeration(int, int, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testcase.Registeration@3295cfbe] output={null}]]]>
+                <![CDATA[[TestResult name=user_Registeration status=SUCCESS method=Registeration.user_Registeration(int, int, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testcase.Registeration@1f950198] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeWindow -->
+        <test-method status="PASS" signature="logout(int, int)[pri:0, instance:testcase.Registeration@1f950198]" name="logout" duration-ms="6324" started-at="2015-07-14T18:10:03Z" data-provider="logout" finished-at="2015-07-14T18:10:09Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[15]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[8]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout -->
+        <test-method status="PASS" signature="closeWindow(org.testng.ITestResult)[pri:0, instance:testcase.Registeration@1f950198]" name="closeWindow" is-config="true" duration-ms="0" started-at="2015-07-14T18:10:09Z" finished-at="2015-07-14T18:10:09Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=logout status=SUCCESS method=Registeration.logout(int, int)[pri:0, instance:testcase.Registeration@1f950198] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeWindow -->
+        <test-method status="PASS" signature="forgetPassword(int, int, java.lang.String)[pri:0, instance:testcase.Registeration@1f950198]" name="forgetPassword" duration-ms="2265" started-at="2015-07-14T18:10:09Z" data-provider="forgetPassword" finished-at="2015-07-14T18:10:12Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[16]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[8]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[sunil19@mailinator.com]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- forgetPassword -->
+        <test-method status="PASS" signature="closeWindow(org.testng.ITestResult)[pri:0, instance:testcase.Registeration@1f950198]" name="closeWindow" is-config="true" duration-ms="0" started-at="2015-07-14T18:10:12Z" finished-at="2015-07-14T18:10:12Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=forgetPassword status=SUCCESS method=Registeration.forgetPassword(int, int, java.lang.String)[pri:0, instance:testcase.Registeration@1f950198] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeWindow -->
+        <test-method status="PASS" signature="email_verification(int, int, java.lang.String)[pri:0, instance:testcase.Registeration@1f950198]" name="email_verification" duration-ms="36" started-at="2015-07-14T18:10:12Z" data-provider="forgetPassword" finished-at="2015-07-14T18:10:12Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[16]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[8]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[sunil19@mailinator.com]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- email_verification -->
+        <test-method status="PASS" signature="closeWindow(org.testng.ITestResult)[pri:0, instance:testcase.Registeration@1f950198]" name="closeWindow" is-config="true" duration-ms="0" started-at="2015-07-14T18:10:12Z" finished-at="2015-07-14T18:10:12Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=email_verification status=SUCCESS method=Registeration.email_verification(int, int, java.lang.String)[pri:0, instance:testcase.Registeration@1f950198] output={null}]]]>
               </value>
             </param>
           </params>
@@ -142,7 +233,7 @@
         </test-method> <!-- closeWindow -->
       </class> <!-- testcase.Registeration -->
       <class name="testcase.contactus_query">
-        <test-method status="PASS" signature="openBrowser(java.lang.String, java.lang.String)[pri:0, instance:testcase.contactus_query@30e3c624]" name="openBrowser" is-config="true" duration-ms="14720" started-at="2015-07-14T10:56:25Z" finished-at="2015-07-14T10:56:40Z">
+        <test-method status="PASS" signature="openBrowser(java.lang.String, java.lang.String)[pri:0, instance:testcase.contactus_query@39e57e8f]" name="openBrowser" is-config="true" duration-ms="14388" started-at="2015-07-14T18:09:05Z" finished-at="2015-07-14T18:09:19Z">
           <params>
             <param index="0">
               <value>
@@ -158,7 +249,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openBrowser -->
-        <test-method status="PASS" signature="open_contact_us(int, int)[pri:0, instance:testcase.contactus_query@30e3c624]" name="open_contact_us" duration-ms="1178" started-at="2015-07-14T10:56:41Z" data-provider="open_shutter" finished-at="2015-07-14T10:56:42Z">
+        <test-method status="PASS" signature="open_contact_us(int, int)[pri:0, instance:testcase.contactus_query@39e57e8f]" name="open_contact_us" duration-ms="1195" started-at="2015-07-14T18:09:20Z" data-provider="open_shutter" finished-at="2015-07-14T18:09:21Z">
           <params>
             <param index="0">
               <value>
@@ -174,18 +265,18 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- open_contact_us -->
-        <test-method status="PASS" signature="closeWindow(org.testng.ITestResult)[pri:0, instance:testcase.contactus_query@30e3c624]" name="closeWindow" is-config="true" duration-ms="0" started-at="2015-07-14T10:56:43Z" finished-at="2015-07-14T10:56:43Z">
+        <test-method status="PASS" signature="closeWindow(org.testng.ITestResult)[pri:0, instance:testcase.contactus_query@39e57e8f]" name="closeWindow" is-config="true" duration-ms="1" started-at="2015-07-14T18:09:22Z" finished-at="2015-07-14T18:09:22Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=open_contact_us status=SUCCESS method=contactus_query.open_contact_us(int, int)[pri:0, instance:testcase.contactus_query@30e3c624] output={null}]]]>
+                <![CDATA[[TestResult name=open_contact_us status=SUCCESS method=contactus_query.open_contact_us(int, int)[pri:0, instance:testcase.contactus_query@39e57e8f] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeWindow -->
-        <test-method status="PASS" signature="close_contact_us(int, int)[pri:0, instance:testcase.contactus_query@30e3c624]" name="close_contact_us" duration-ms="831" started-at="2015-07-14T10:56:43Z" data-provider="close_shutter" finished-at="2015-07-14T10:56:44Z">
+        <test-method status="PASS" signature="close_contact_us(int, int)[pri:0, instance:testcase.contactus_query@39e57e8f]" name="close_contact_us" duration-ms="782" started-at="2015-07-14T18:09:22Z" data-provider="close_shutter" finished-at="2015-07-14T18:09:23Z">
           <params>
             <param index="0">
               <value>
@@ -201,18 +292,18 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- close_contact_us -->
-        <test-method status="PASS" signature="closeWindow(org.testng.ITestResult)[pri:0, instance:testcase.contactus_query@30e3c624]" name="closeWindow" is-config="true" duration-ms="0" started-at="2015-07-14T10:56:44Z" finished-at="2015-07-14T10:56:44Z">
+        <test-method status="PASS" signature="closeWindow(org.testng.ITestResult)[pri:0, instance:testcase.contactus_query@39e57e8f]" name="closeWindow" is-config="true" duration-ms="0" started-at="2015-07-14T18:09:23Z" finished-at="2015-07-14T18:09:23Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=close_contact_us status=SUCCESS method=contactus_query.close_contact_us(int, int)[pri:0, instance:testcase.contactus_query@30e3c624] output={null}]]]>
+                <![CDATA[[TestResult name=close_contact_us status=SUCCESS method=contactus_query.close_contact_us(int, int)[pri:0, instance:testcase.contactus_query@39e57e8f] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeWindow -->
-        <test-method status="PASS" signature="submitQuery_Validations(int, int)[pri:0, instance:testcase.contactus_query@30e3c624]" name="submitQuery_Validations" duration-ms="5361" started-at="2015-07-14T10:56:44Z" data-provider="query_validation" finished-at="2015-07-14T10:56:49Z">
+        <test-method status="PASS" signature="submitQuery_Validations(int, int)[pri:0, instance:testcase.contactus_query@39e57e8f]" name="submitQuery_Validations" duration-ms="5219" started-at="2015-07-14T18:09:23Z" data-provider="query_validation" finished-at="2015-07-14T18:09:29Z">
           <params>
             <param index="0">
               <value>
@@ -228,18 +319,18 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- submitQuery_Validations -->
-        <test-method status="PASS" signature="closeWindow(org.testng.ITestResult)[pri:0, instance:testcase.contactus_query@30e3c624]" name="closeWindow" is-config="true" duration-ms="1" started-at="2015-07-14T10:56:49Z" finished-at="2015-07-14T10:56:49Z">
+        <test-method status="PASS" signature="closeWindow(org.testng.ITestResult)[pri:0, instance:testcase.contactus_query@39e57e8f]" name="closeWindow" is-config="true" duration-ms="0" started-at="2015-07-14T18:09:29Z" finished-at="2015-07-14T18:09:29Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=submitQuery_Validations status=SUCCESS method=contactus_query.submitQuery_Validations(int, int)[pri:0, instance:testcase.contactus_query@30e3c624] output={null}]]]>
+                <![CDATA[[TestResult name=submitQuery_Validations status=SUCCESS method=contactus_query.submitQuery_Validations(int, int)[pri:0, instance:testcase.contactus_query@39e57e8f] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeWindow -->
-        <test-method status="PASS" signature="submitQuery(int, int, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testcase.contactus_query@30e3c624]" name="submitQuery" duration-ms="7832" started-at="2015-07-14T10:56:50Z" data-provider="query" finished-at="2015-07-14T10:56:57Z">
+        <test-method status="PASS" signature="submitQuery(int, int, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testcase.contactus_query@39e57e8f]" name="submitQuery" duration-ms="12650" started-at="2015-07-14T18:09:29Z" data-provider="query" finished-at="2015-07-14T18:09:42Z">
           <params>
             <param index="0">
               <value>
@@ -258,7 +349,7 @@
             </param>
             <param index="3">
               <value>
-                <![CDATA[sunil1@mailinator.com]]>
+                <![CDATA[sunil2@mailinator.com]]>
               </value>
             </param>
             <param index="4">
@@ -275,11 +366,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- submitQuery -->
-        <test-method status="PASS" signature="closeWindow(org.testng.ITestResult)[pri:0, instance:testcase.contactus_query@30e3c624]" name="closeWindow" is-config="true" duration-ms="0" started-at="2015-07-14T10:56:57Z" finished-at="2015-07-14T10:56:57Z">
+        <test-method status="PASS" signature="closeWindow(org.testng.ITestResult)[pri:0, instance:testcase.contactus_query@39e57e8f]" name="closeWindow" is-config="true" duration-ms="0" started-at="2015-07-14T18:09:42Z" finished-at="2015-07-14T18:09:42Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=submitQuery status=SUCCESS method=contactus_query.submitQuery(int, int, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testcase.contactus_query@30e3c624] output={null}]]]>
+                <![CDATA[[TestResult name=submitQuery status=SUCCESS method=contactus_query.submitQuery(int, int, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testcase.contactus_query@39e57e8f] output={null}]]]>
               </value>
             </param>
           </params>

@@ -68,18 +68,21 @@ public class Registeration extends homepage {
 	sa.assertEquals(driver.getTitle(),"Resume Writing Services | Profile Verification | Career Astrology | StepAhead","You are on WRONG Page.Logout is redirecting wrong");
 	}
 	
-	@Test(priority=5,dataProvider="forgetPassword",dataProviderClass=Registeration_dp.class)
+	@Test(priority=6,dataProvider="forgetPassword",dataProviderClass=Registeration_dp.class)
 	public void forgetPassword(int row,int col,String email)
 	{
 		System.out.println("Email is"+email);
 		new homepage().open_registeration();
 		new homepage().submit_forgetpassword(email);
+		
+		
 	}
 	
-	@Test(priority=5,dataProvider="forgetPassword",dataProviderClass=Registeration_dp.class)
-	public void email_verification()
+	@Test(priority=7,dataProvider="forgetPassword",dataProviderClass=Registeration_dp.class)
+	public void email_verification(int row,int col,String name)
 	{
-		navigate("https://mailinator.com/inbox.jsp?to=sunil1");
+	navigate_to_mailinator(name);	
+	
 	}
 	
 

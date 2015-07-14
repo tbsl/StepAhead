@@ -59,6 +59,7 @@ public class homepage extends Useractions{
 	driver.switchTo().frame("GB_frame");
 	
 	type(new Forget_pwd_e().email,Email);
+	click(new Forget_pwd_e().submit);
 	}
 	
 	public void close_registeration() throws InterruptedException
