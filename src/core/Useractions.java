@@ -4,6 +4,7 @@ import java.util.Set;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.testng.asserts.SoftAssert;
 
 public class Useractions extends OpenandcloseBrowser{
@@ -56,6 +57,25 @@ public class Useractions extends OpenandcloseBrowser{
 	 driver.navigate().to(finalURL);	
 	}
 	
+	public void navigate(String url)
+	{
+		driver.navigate().to(url);	
+	}
+	
+	
+	
+	public void mouseHover(By loc)
+	{
+		Actions action = new Actions(getInsatnce());
+		WebElement mainMenu = driver.findElement(loc);
+		String a=mainMenu.getAttribute("href");
+		System.out.println(a);
+		mainMenu.click();
+		action.moveToElement(mainMenu).build().perform();;
+
+	}
+
+	
 	public void SwitchwindowHandles(String data)
 	{
 		Set<String> windowHandles = driver.getWindowHandles();
@@ -76,6 +96,10 @@ public class Useractions extends OpenandcloseBrowser{
 	return driver.findElement(loc).isDisplayed();
 	}
 
+	public String getPageSource()
+	{
+		return driver.getPageSource();
+	}
 
 	
 	

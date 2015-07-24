@@ -6,6 +6,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
+import org.openqa.selenium.interactions.Actions;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterTest;
@@ -61,7 +62,8 @@ public class OpenandcloseBrowser {
 		driver.close();
 	System.out.println("DRIVER CLOSING COMMAND");	
 	}
-
+	
+	
 	
 /*@BeforeMethod
 public void a()
@@ -76,6 +78,7 @@ System.out.println("BEFORE A");
 	
 	
 	}
+	
 	public WebDriver getInsatnce()
 	{
 		return driver;

@@ -40,11 +40,31 @@ public class Registeration_dp {
 	}
 	
 	@DataProvider
+	public static Object[][] login() throws IOException
+	{
+		String outputdata=Excelhandler.readCell(17,7);
+		String[] datavalues=outputdata.split(",");
+		int out_row=Integer.parseInt(datavalues[0]);
+		int out_col=Integer.parseInt(datavalues[1]);
+		
+		String inputdata=Excelhandler.readCell(14,6);
+		String[] inputvalues=inputdata.split(",");
+		String name=inputvalues[0];
+		String email=inputvalues[1];
+		String password=inputvalues[2];
+		//String confirm_password=inputvalues[3];
+		//String mobile=inputvalues[4];
+		return new Object[][]{{out_row,out_col,email,password,name}};
+	}
+	
+	
+	@DataProvider
 	public static Object[][] logout() throws IOException
 	{
 		String outputData[]=Excelhandler.readCell(15,7).split(",");
 		int row=Integer.parseInt(outputData[0]);
 		int col=Integer.parseInt(outputData[1]);
+		
 		return new Object[][]{{row,col}};
 		
 		

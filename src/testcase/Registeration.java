@@ -3,6 +3,7 @@ package testcase;
 import objects.Registeration_o;
 import objects.homepage;
 import objects.homepage_loggedin_o;
+import objects.mailinator;
 
 import org.openqa.selenium.By;
 import org.testng.annotations.Test;
@@ -55,14 +56,30 @@ public class Registeration extends homepage {
 	{
 		
 		new Registeration_o().user_registeration(Name, Email, password, Confirm_password, Mobile);
-		sa.assertEquals(isPresent(new Homepage_loggedin_e().MyAccount),true,"You are not on correct page");
-		sa.assertAll();
+		navigate_to_mailinator(Email);
+		new mailinator().openmail();
+		System.out.println("#######################");
+		System.out.println(getPageSource().contains(Name));
+		System.out.println(getPageSource().contains(Email));
+		System.out.println(getPageSource().contains(password));
+		System.out.println(getPageSource());
 		
+		//sa.assertEquals(getPageSource().contains(Name), true, "Name is missing");
+		sa.assertEquals(getPageSource().contains(Email), true, "Email is missing");
+		//sa.assertEquals(getPageSource().contains(password), true, "Password is missing");
+		sa.assertAll();
 	}
+
+	
+	
+	
+	
 	
 	@Test(priority=5,dataProvider="logout",dataProviderClass=Registeration_dp.class)
 	public void logout(int row,int col)
 	{
+		
+	navigate("http://ecm.timesjobs.com/");
 	new homepage_loggedin_o().open_Myaccount();
 	new homepage_loggedin_o().logout();
 	sa.assertEquals(driver.getTitle(),"Resume Writing Services | Profile Verification | Career Astrology | StepAhead","You are on WRONG Page.Logout is redirecting wrong");
@@ -78,15 +95,30 @@ public class Registeration extends homepage {
 		
 	}
 	
+	
 	@Test(priority=7,dataProvider="forgetPassword",dataProviderClass=Registeration_dp.class)
-	public void email_verification(int row,int col,String name)
+	public void forget_pwd_email_verification(int row,int col,String name)
 	{
-	navigate_to_mailinator(name);	
-	
-	}
-	
+		navigate_to_mailinator(name);	
+		new mailinator().openmail();
 
-	
+
+	}
+
+	@Test(priority=8,dataProvider="login",dataProviderClass=Registeration_dp.class)
+	public void Login(int row,int col,String email,String pwd,String name)
+	{
+		navigate("http://ecm.timesjobs.com/");
+
+		new homepage().open_registeration();
+		new homepage().login(email, pwd);
+		new homepage_loggedin_o().open_Myaccount();
+		sa.assertEquals(gettext(new Homepage_loggedin_e().loggedin_username(name)),name,"Loggedin user name not matched");
+	}
+
+
+
+
 	
 	
 }

@@ -13,16 +13,11 @@
     <parameter name="baseURL" value="http://ecm.timesjobs.com/"/>
     <parameter name="browser" value="FIREFOX"/>
     <classes>
-      <class name="testcase.contactus_query">
-        <methods>
-          <include name="closeWindow"/>
-          <include name="openBrowser"/>
-        </methods>
-      </class> <!-- testcase.contactus_query -->
       <class name="testcase.Registeration">
         <methods>
           <include name="closeWindow"/>
-          <include name="forgetPassword" invocation-numbers="0"/>
+          <include name="openBrowser"/>
+          <include name="forget_pwd_email_verification" invocation-numbers="0"/>
         </methods>
       </class> <!-- testcase.Registeration -->
     </classes>

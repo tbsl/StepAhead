@@ -62,6 +62,15 @@ public class homepage extends Useractions{
 	click(new Forget_pwd_e().submit);
 	}
 	
+	public void login(String Email,String Pwd)
+	{
+		type(new Homepage().Signin_email, Email);
+		type(new Homepage().signin_password, Pwd);
+		click(new Homepage().signIn_btn);
+		
+		
+	}
+	
 	public void close_registeration() throws InterruptedException
 	{
 		Thread.sleep(4000);

@@ -17,5 +17,8 @@ public class Homepage_loggedin_e {
 	{
 		return By.xpath("//li/strong[.='"+Name+"']");
 	}
+	
+	public By Improve_Resume_menu=By.xpath("//div[@class='home_midAlign']/ul/li/a[.='Improve Resume']");
+	
 
 }
