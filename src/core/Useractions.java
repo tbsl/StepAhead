@@ -76,7 +76,7 @@ public class Useractions extends OpenandcloseBrowser{
 		String a=mainMenu.getAttribute("href");
 		System.out.println(a);
 		action.moveToElement(mainMenu).build().perform();;
-		Thread.sleep(5000);
+		Thread.sleep(3000);
 
 	}
 

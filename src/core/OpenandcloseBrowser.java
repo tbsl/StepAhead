@@ -56,7 +56,7 @@ public class OpenandcloseBrowser {
     }
 	
 	
-	@AfterTest
+	//@AfterTest
 	public void closeBrowser()
 	{
 		driver.close();
@@ -71,13 +71,23 @@ public void a()
 System.out.println("BEFORE A");	
 }
 */	
+	
 	@AfterMethod
 	public void closeWindow(ITestResult tr)
 	{
-	
-	
-	
+		
+		System.out.println("IN AFTER METHOD");
+	if(tr.getMethod().getMethodName().equalsIgnoreCase("click_view_sample_resume"))
+	{
+		
+		
+		closeBrowser();
+		new Useractions().SwitchwindowHandles(ParnetHome);
+		System.out.println(driver.getTitle());
+		
 	}
+	}
+
 	
 	public WebDriver getInsatnce()
 	{

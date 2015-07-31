@@ -16,21 +16,18 @@
     <classes>
       <class name="testcase.Improve_resume">
         <methods>
+          <include name="click_socialprofiler" invocation-numbers="0"/>
+          <include name="Improve_Resume_hover" invocation-numbers="0"/>
           <include name="closeWindow"/>
+          <include name="click_visual_resume_premium"/>
           <include name="openBrowser"/>
+          <include name="click_ResumeCritique" invocation-numbers="0"/>
+          <include name="Click_MR_International" invocation-numbers="0"/>
+          <include name="Click_MRI" invocation-numbers="0"/>
+          <include name="click_view_sample_resume" invocation-numbers="0"/>
+          <include name="click_view_all_services" invocation-numbers="0"/>
         </methods>
       </class> <!-- testcase.Improve_resume -->
-      <class name="testcase.contactus_query">
-        <methods>
-          <include name="closeWindow"/>
-        </methods>
-      </class> <!-- testcase.contactus_query -->
-      <class name="testcase.Registeration">
-        <methods>
-          <include name="closeWindow"/>
-          <include name="user_Registeration_Validations" invocation-numbers="0"/>
-        </methods>
-      </class> <!-- testcase.Registeration -->
     </classes>
   </test> <!-- Firefox Result(failed) -->
 </suite> <!-- Failed suite [SA Automation] -->
