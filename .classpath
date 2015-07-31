@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
 	<classpathentry kind="src" path="src"/>
-	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
 	<classpathentry kind="lib" path="C:/Users/susheel.thakur/appium_RND/StepAhead/lib/commons-codec-1.9.jar"/>
 	<classpathentry kind="lib" path="C:/Users/susheel.thakur/appium_RND/StepAhead/lib/commons-logging-1.1.3.jar"/>
 	<classpathentry kind="lib" path="C:/Users/susheel.thakur/appium_RND/StepAhead/lib/guice-3.0.jar"/>
@@ -13,9 +12,10 @@
 	<classpathentry kind="lib" path="C:/Users/susheel.thakur/appium_RND/StepAhead/lib/poi-ooxml-schemas-3.12-20150511.jar"/>
 	<classpathentry kind="lib" path="C:/Users/susheel.thakur/appium_RND/StepAhead/lib/poi-scratchpad-3.12-20150511.jar"/>
 	<classpathentry kind="lib" path="C:/Users/susheel.thakur/appium_RND/StepAhead/lib/reportng-1.1.4.jar"/>
-	<classpathentry kind="lib" path="C:/Users/susheel.thakur/appium_RND/StepAhead/lib/selenium-java-2.45.0.zip"/>
-	<classpathentry kind="lib" path="C:/Users/susheel.thakur/appium_RND/StepAhead/lib/selenium-server-standalone-2.45.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/susheel.thakur/appium_RND/StepAhead/lib/selenium-java-2.46.0.zip"/>
+	<classpathentry kind="lib" path="C:/Users/susheel.thakur/appium_RND/StepAhead/lib/selenium-server-standalone-2.46.0.jar"/>
 	<classpathentry kind="lib" path="C:/Users/susheel.thakur/appium_RND/StepAhead/lib/velocity-dep-1.4.jar"/>
 	<classpathentry kind="lib" path="C:/Users/susheel.thakur/appium_RND/StepAhead/lib/xmlbeans-2.6.0.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

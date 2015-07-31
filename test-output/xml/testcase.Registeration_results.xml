@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Firefox Result"
+           tests="8"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="95.427">
+  <properties />
+  
+  
+            <testcase name="Login" time="15.036" classname="testcase.Registeration" />
+                <testcase name="forget_pwd_email_verification" time="3.782" classname="testcase.Registeration" />
+                <testcase name="user_Registeration_Validations" time="9.724" classname="testcase.Registeration" />
+                <testcase name="openRegisteration" time="4.273" classname="testcase.Registeration" />
+                <testcase name="user_Registeration" time="12.351" classname="testcase.Registeration" />
+                <testcase name="closeRegisteration_Shutter" time="3.254" classname="testcase.Registeration" />
+                <testcase name="forgetPassword" time="33.034" classname="testcase.Registeration" />
+                <testcase name="logout" time="13.973" classname="testcase.Registeration" />
+      
+</testsuite>

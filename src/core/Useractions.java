@@ -3,8 +3,11 @@ package core;
 import java.util.Set;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.StaleElementReferenceException;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.asserts.SoftAssert;
 
 public class Useractions extends OpenandcloseBrowser{
@@ -34,11 +37,13 @@ public class Useractions extends OpenandcloseBrowser{
 	
 	public String getActiveWindow()
 	{
+		
 	return driver.getWindowHandle();	
 		
 	}
 	public String getTitle()
 	{
+		
 		return driver.getTitle();
 	}
 	
@@ -64,14 +69,14 @@ public class Useractions extends OpenandcloseBrowser{
 	
 	
 	
-	public void mouseHover(By loc)
+	public void mouseHover(By loc) throws InterruptedException
 	{
 		Actions action = new Actions(getInsatnce());
 		WebElement mainMenu = driver.findElement(loc);
 		String a=mainMenu.getAttribute("href");
 		System.out.println(a);
-		mainMenu.click();
 		action.moveToElement(mainMenu).build().perform();;
+		Thread.sleep(5000);
 
 	}
 
@@ -100,8 +105,32 @@ public class Useractions extends OpenandcloseBrowser{
 	{
 		return driver.getPageSource();
 	}
+	
+	
+	public boolean retryingFindClick(By loc) {
+        boolean result = false;
+        int attempts = 0;
+        while(attempts < 2) {
+            try {
+                driver.findElement(loc).click();
+                result = true;
+                break;
+            } catch(StaleElementReferenceException e) {
+            }
+            attempts++;
+        }
+        return result;
 
+}
 	
+	public void explicitWait(By loc)
+	{
+		
+	    WebDriverWait wait = new WebDriverWait(driver, 15);
+	    wait.until(ExpectedConditions.visibilityOfElementLocated(loc));
+	    		
+	}
 	
+
 
 }

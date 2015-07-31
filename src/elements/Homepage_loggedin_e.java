@@ -18,7 +18,22 @@ public class Homepage_loggedin_e {
 		return By.xpath("//li/strong[.='"+Name+"']");
 	}
 	
+	
+	
 	public By Improve_Resume_menu=By.xpath("//div[@class='home_midAlign']/ul/li/a[.='Improve Resume']");
+	
+	public By Magic_Resume_India=By.xpath("//a[.='Magic Resume India']");
+	
+	public By Magic_Resume_International=By.xpath("//a[.='Magic Resume International']");
+	public By Resume_Criticue=By.xpath("//a[.='Resume Critique']");
+	
+	public By Social_Profiler=By.xpath("//a[.='Social Profiler']");
+	public By Visual_Resume_Premium=By.xpath("//a[.='Visual Resume Premium']");
+	
+	
+	
+	
+	
 	
 
 }

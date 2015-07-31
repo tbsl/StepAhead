@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Firefox Result"
+           tests="1"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="5.079">
+  <properties />
+  
+  
+            <testcase name="Improve_Resume_hover" time="5.079" classname="testcase.Improve_resume" />
+      
+</testsuite>

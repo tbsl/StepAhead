@@ -33,14 +33,15 @@ public class contactus_query extends homepage{
 	}
 	
 	@Test(priority=2,dataProvider="close_shutter",dataProviderClass=homepage_dp.class)
-	public void close_contact_us(int row,int col)
+	public void close_contact_us(int row,int col) throws InterruptedException
 	{
 		
 	new homepage().close_contact_us();
-	sa.assertEquals(false,isPresent(new Homepage().Contact_US_Email));
-	sa.assertEquals(false,isPresent(new Homepage().Contact_US_LiveChat));
-	sa.assertEquals(false,isPresent(new Homepage().Contact_US_Number));
-	sa.assertEquals(false,isPresent(new Homepage().Contact_US_Query));
+	
+	sa.assertEquals(false,isPresent(new Homepage().Contact_US_Email),"Contact us is having issue");
+	sa.assertEquals(false,isPresent(new Homepage().Contact_US_LiveChat),"Live Chat is having issue");
+	sa.assertEquals(false,isPresent(new Homepage().Contact_US_Number),"Number is having issue");
+	sa.assertEquals(false,isPresent(new Homepage().Contact_US_Query),"Query is having issues");
 	sa.assertAll();
 	}
 	
@@ -60,14 +61,15 @@ public class contactus_query extends homepage{
 	}
 	
 	@Test(priority=4,dataProvider="query",dataProviderClass=Leave_your_query_DP.class)
-	public void submitQuery(int row,int col,String name,String email,String phone,String Query)
+	public void submitQuery(int row,int col,String name,String email,String phone,String Query) throws InterruptedException
 	{
 		
-		new homepage().open_contact_us();
-		new homepage().open_Leave_ur_Query();
+		//new homepage().open_contact_us();
+		//new homepage().open_Leave_ur_Query();
 		new leave_your_query_o().querysubmission(name, email, phone, Query);
-	sa.assertEquals(gettext(new Leave_your_Query().Query_Feedback),"Thank you for submitting your query.We will get back to you shortly.");
-	sa.assertAll();
+		sa.assertEquals(gettext(new Leave_your_Query().Query_Feedback),"Thank you for submitting your query.We will get back to you shortly.");
+		sa.assertAll();
+		Thread.sleep(2000);
 	}
 	
 	

@@ -15,16 +15,18 @@ public class homepage extends Useractions{
 		
 	}
 
-	public void close_contact_us()
+	public void close_contact_us() throws InterruptedException
 	{
-	click(new Homepage().Contact_US_toolbar_Close);	
+	click(new Homepage().Contact_US_toolbar_Close);
+	Thread.sleep(2000);
 		
 	}
 	//SignIn#Registeration
 	
-	public void open_registeration()
+	public void open_registeration() throws InterruptedException
 	{
-	click(new Homepage().Sign_and_Register);	
+	click(new Homepage().Sign_and_Register);
+	Thread.sleep(2000);
 	}
 	
 	public void open_registeration_form()
@@ -57,7 +59,6 @@ public class homepage extends Useractions{
 	click(new Homepage().forget_pwd);	
 	driver.switchTo().frame("GB_frame1");
 	driver.switchTo().frame("GB_frame");
-	
 	type(new Forget_pwd_e().email,Email);
 	click(new Forget_pwd_e().submit);
 	}
@@ -73,8 +74,10 @@ public class homepage extends Useractions{
 	
 	public void close_registeration() throws InterruptedException
 	{
-		Thread.sleep(4000);
-	click(new Homepage().Close_icon);
+		Thread.sleep(2000);
+		click(new Homepage().Close_icon);
+		Thread.sleep(1000);
+
 	}
 	
 }

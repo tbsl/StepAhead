@@ -48,7 +48,7 @@ public class OpenandcloseBrowser {
 			}
 		driver.get(baseURL);
 		driver.manage().window().maximize();
-		driver.manage().timeouts().implicitlyWait(20,TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(15,TimeUnit.SECONDS);
 		this.ParnetHome=driver.getWindowHandle();
 
 		
@@ -56,7 +56,7 @@ public class OpenandcloseBrowser {
     }
 	
 	
-	//@AfterTest
+	@AfterTest
 	public void closeBrowser()
 	{
 		driver.close();

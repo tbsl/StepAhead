@@ -3,11 +3,12 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="testcase.Registeration">
+      <class name="testcase.Improve_resume">
         <methods>
-          <include name="user_Registeration_Validations"/>
+          <include name="Improve_Resume_hover"/>
+          <include name="Login"/>
         </methods>
-      </class> <!-- testcase.Registeration -->
+      </class> <!-- testcase.Improve_resume -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
