@@ -90,6 +90,15 @@ public class Improve_resume_dp {
 		return new Object[][]{{a,b}};
 	}
 	
+	@DataProvider
+	public static Object[][] click_viewresume(ITestContext context) throws IOException
+	{
+		String data=Excelhandler.readCell(26,7);
+		String[] outputvalues = data.split(",");
+		int a=Integer.parseInt(outputvalues[0]);
+		int b=Integer.parseInt(outputvalues[1]);
+		return new Object[][]{{a,b}};
+	}
 	
 	
 }

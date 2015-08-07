@@ -13,7 +13,10 @@ import org.testng.asserts.SoftAssert;
 public class Useractions extends OpenandcloseBrowser{
 	protected SoftAssert sa=new SoftAssert();
 
-	
+	public void refresh()
+	{
+		driver.navigate().refresh();
+	}
 	public void click(By loc)
 	{
 		driver.findElement(loc).click();

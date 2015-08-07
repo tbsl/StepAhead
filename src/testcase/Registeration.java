@@ -47,7 +47,7 @@ public class Registeration extends homepage {
 		new homepage().open_registeration();
 		new homepage().open_registeration_form();
 		new Registeration_o().registeration_Validations();
-		Thread.sleep(1000);
+		Thread.sleep(2000);
 		sa.assertEquals(getTitle(),"Sign Up | Create Account | StepAhead","You are on wrong page");
 		sa.assertEquals(isPresent(new Registeration_e().firstName_Error),true,"Name error is missing");
 		sa.assertEquals(isPresent(new Registeration_e().emailAdd_Error),true,"Email error is missing");
@@ -55,7 +55,7 @@ public class Registeration extends homepage {
 	}
 	
 	@Test(priority=4,dataProvider="user_registeration",dataProviderClass=Registeration_dp.class)
-	public void user_Registeration(int row,int col,String Name,String Email,String password,String Confirm_password,String Mobile)
+	public void user_Registeration(int row,int col,String Name,String Email,String password,String Confirm_password,String Mobile) throws InterruptedException
 	{
 		
 		new Registeration_o().user_registeration(Name, Email, password, Confirm_password, Mobile);
@@ -95,7 +95,7 @@ public class Registeration extends homepage {
 	
 	
 	@Test(priority=7,dataProvider="forgetPassword",dataProviderClass=Registeration_dp.class)
-	public void forget_pwd_email_verification(int row,int col,String name)
+	public void forget_pwd_email_verification(int row,int col,String name) throws InterruptedException
 	{
 		navigate_to_mailinator(name);	
 		new mailinator().openmail();

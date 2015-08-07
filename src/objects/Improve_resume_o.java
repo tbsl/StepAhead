@@ -33,6 +33,12 @@ public class Improve_resume_o extends Useractions {
 	click(new Improve_resume_e().m_Social_Profiler);
 	}
 	
+	public void click_visual_resume()
+	{
+	click(new Improve_resume_e().m_visual_resume);
+	}
+	
+	
 	public void click_visual_resume_premium()
 	{
 	click(new Improve_resume_e().m_VRP);

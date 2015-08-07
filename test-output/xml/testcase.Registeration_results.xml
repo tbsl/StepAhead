@@ -1,60 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuite name="Firefox Result"
-           tests="16"
+           tests="8"
            failures="0"
            errors="0"
-           skipped="16"
-           time="0.006">
+           skipped="0"
+           time="110.640">
   <properties />
   
-            <testcase name="closeWindow" time="0.0" classname="testcase.Registeration">
-          <skipped />
-    </testcase>
-            <testcase name="closeWindow" time="0.0" classname="testcase.Registeration">
-          <skipped />
-    </testcase>
-            <testcase name="closeWindow" time="0.0" classname="testcase.Registeration">
-          <skipped />
-    </testcase>
-            <testcase name="closeWindow" time="0.0" classname="testcase.Registeration">
-          <skipped />
-    </testcase>
-            <testcase name="closeWindow" time="0.0" classname="testcase.Registeration">
-          <skipped />
-    </testcase>
-            <testcase name="closeWindow" time="0.0" classname="testcase.Registeration">
-          <skipped />
-    </testcase>
-            <testcase name="closeWindow" time="0.0" classname="testcase.Registeration">
-          <skipped />
-    </testcase>
-            <testcase name="closeWindow" time="0.0" classname="testcase.Registeration">
-          <skipped />
-    </testcase>
-            <testcase name="logout" time="0.0" classname="testcase.Registeration">
-          <skipped />
-    </testcase>
-            <testcase name="openRegisteration" time="0.0" classname="testcase.Registeration">
-          <skipped />
-    </testcase>
-            <testcase name="forgetPassword" time="0.0" classname="testcase.Registeration">
-          <skipped />
-    </testcase>
-            <testcase name="Login" time="0.0" classname="testcase.Registeration">
-          <skipped />
-    </testcase>
-            <testcase name="user_Registeration_Validations" time="0.0" classname="testcase.Registeration">
-          <skipped />
-    </testcase>
-            <testcase name="closeRegisteration_Shutter" time="0.0" classname="testcase.Registeration">
-          <skipped />
-    </testcase>
-            <testcase name="user_Registeration" time="0.0" classname="testcase.Registeration">
-          <skipped />
-    </testcase>
-            <testcase name="forget_pwd_email_verification" time="0.0" classname="testcase.Registeration">
-          <skipped />
-    </testcase>
   
-  
+            <testcase name="openRegisteration" time="5.705" classname="testcase.Registeration" />
+                <testcase name="logout" time="13.460" classname="testcase.Registeration" />
+                <testcase name="closeRegisteration_Shutter" time="3.331" classname="testcase.Registeration" />
+                <testcase name="Login" time="17.482" classname="testcase.Registeration" />
+                <testcase name="forget_pwd_email_verification" time="5.467" classname="testcase.Registeration" />
+                <testcase name="user_Registeration" time="15.517" classname="testcase.Registeration" />
+                <testcase name="forgetPassword" time="35.444" classname="testcase.Registeration" />
+                <testcase name="user_Registeration_Validations" time="14.234" classname="testcase.Registeration" />
+      
 </testsuite>

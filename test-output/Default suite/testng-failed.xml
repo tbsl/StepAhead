@@ -3,11 +3,18 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="util.methodname">
+      <class name="testcase.Registeration">
         <methods>
-          <include name="abc"/>
+          <include name="closeRegisteration_Shutter"/>
+          <include name="Login"/>
+          <include name="openRegisteration"/>
+          <include name="logout"/>
+          <include name="forgetPassword"/>
+          <include name="user_Registeration"/>
+          <include name="user_Registeration_Validations"/>
+          <include name="forget_pwd_email_verification"/>
         </methods>
-      </class> <!-- util.methodname -->
+      </class> <!-- testcase.Registeration -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

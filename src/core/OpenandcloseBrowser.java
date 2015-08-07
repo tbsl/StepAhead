@@ -18,81 +18,63 @@ import org.testng.annotations.Parameters;
 
 public class OpenandcloseBrowser {
 	public static WebDriver driver;
-	public String ParnetHome,test;
+	public String ParnetHome, test;
 
-	
-	@Parameters({"browser","baseURL"})
+	@Parameters({ "browser", "baseURL" })
 	@BeforeTest
-    public void openBrowser(String browser,String baseURL)
-    {
-		if(browser.equals("FIREFOX"))
-			{
-				driver=new FirefoxDriver();
-			}
-		
-		else if(browser.equals("CHROME"))
-			{
-				System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir")+"\\lib\\chromedriver.exe");
-				driver=new ChromeDriver();
-			}
-	
-		else if(browser.equals("IE"))
-			{
-				System.setProperty("webdriver.ie.driver",System.getProperty("user.dir")+"\\lib\\IEDriverServer.exe");
-				driver=new InternetExplorerDriver();
-			}
-		else
-			{
-				System.out.println("OOSP No Browser Defined");
-			
-			}
+	public void openBrowser(String browser, String baseURL) {
+		if (browser.equals("FIREFOX")) {
+			driver = new FirefoxDriver();
+		}
+
+		else if (browser.equals("CHROME")) {
+			System.setProperty("webdriver.chrome.driver",
+					System.getProperty("user.dir") + "\\lib\\chromedriver.exe");
+			driver = new ChromeDriver();
+		}
+
+		else if (browser.equals("IE")) {
+			System.setProperty("webdriver.ie.driver",
+					System.getProperty("user.dir")
+							+ "\\lib\\IEDriverServer.exe");
+			driver = new InternetExplorerDriver();
+		} else {
+			System.out.println("OOSP No Browser Defined");
+
+		}
 		driver.get(baseURL);
 		driver.manage().window().maximize();
-		driver.manage().timeouts().implicitlyWait(15,TimeUnit.SECONDS);
-		this.ParnetHome=driver.getWindowHandle();
+		driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
+		this.ParnetHome = driver.getWindowHandle();
 
-		
-		this.test="apple";
-    }
-	
-	
-	//@AfterTest
-	public void closeBrowser()
-	{
+		this.test = "apple";
+	}
+
+	@AfterTest
+	public void closeBrowser() {
 		driver.close();
-	System.out.println("DRIVER CLOSING COMMAND");	
-	}
-	
-	
-	
-/*@BeforeMethod
-public void a()
-{
-System.out.println("BEFORE A");	
-}
-*/	
-	
-	@AfterMethod
-	public void closeWindow(ITestResult tr)
-	{
-		
-		System.out.println("IN AFTER METHOD");
-	if(tr.getMethod().getMethodName().equalsIgnoreCase("click_view_sample_resume"))
-	{
-		
-		
-		closeBrowser();
-		new Useractions().SwitchwindowHandles(ParnetHome);
-		System.out.println(driver.getTitle());
-		
-	}
+		System.out.println("DRIVER CLOSING COMMAND");
 	}
 
-	
-	public WebDriver getInsatnce()
-	{
+	/*
+	 * @BeforeMethod public void a() { System.out.println("BEFORE A"); }
+	 */
+
+	@AfterMethod
+	public void closeWindow(ITestResult tr) {
+
+		if (tr.getMethod().getMethodName().equalsIgnoreCase("click_view_sample_resume")) 
+		{
+
+			closeBrowser();
+			new Useractions().SwitchwindowHandles(ParnetHome);
+			System.out.println(driver.getTitle());
+
+		}
+	}
+
+	public WebDriver getInsatnce() {
 		return driver;
 	}
-	
 
 }
