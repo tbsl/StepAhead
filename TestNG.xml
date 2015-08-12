@@ -11,9 +11,10 @@
   		<parameter name="baseURL" value="http://ecm.timesjobs.com/"/> 
   		<parameter name="TestCase" value="TestCases.xslx"/> 
   		<classes>      		
- 	 			 <class name="testcase.contactus_query"/>
-      	    	 <class name="testcase.Registeration"/>
-      		     <class name="testcase.Improve_resume"/>
+ 	 			 <!-- <class name="testcase.contactus_query"/> -->
+      	    	 <!-- <class name="testcase.Registeration"/> -->
+      		     <!-- <class name="testcase.Improve_resume"/> -->
+      		     <class name="testcase.Magic_Resume_India"/>
       	
       	</classes>
 	</test>

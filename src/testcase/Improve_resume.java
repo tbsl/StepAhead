@@ -135,5 +135,6 @@ public class Improve_resume extends Improve_resume_o {
 				"Resume Samples for entry level profiles, freshers, graduates, new professionals.",
 				"View Sample Resume page is not opened");
 	}
+	
 
 }
