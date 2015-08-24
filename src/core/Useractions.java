@@ -10,17 +10,29 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.asserts.SoftAssert;
 
+import util.Utility;
+
 public class Useractions extends OpenandcloseBrowser{
 	protected SoftAssert sa=new SoftAssert();
-
+	 public String Navigate_Url="http://ecm.timesjobs.com/";
+	
 	public void refresh()
 	{
 		driver.navigate().refresh();
 	}
+	
+	
+	
+
+	
+	
+	
 	public void click(By loc)
-	{
-		driver.findElement(loc).click();
-	}
+		{
+		
+		Utility.getWebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(loc)).click();
+		//driver.findElement(loc).click();
+		}
 	
 	public void clear(By loc)
 	{

@@ -7,6 +7,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterTest;
@@ -19,7 +20,8 @@ import org.testng.annotations.Parameters;
 public class OpenandcloseBrowser {
 	public static WebDriver driver;
 	public String ParnetHome, test;
-
+	public WebDriverWait Explicit_wait;
+	
 	@Parameters({ "browser", "baseURL" })
 	@BeforeTest
 	public void openBrowser(String browser, String baseURL) {
@@ -45,9 +47,11 @@ public class OpenandcloseBrowser {
 		driver.get(baseURL);
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
+		Explicit_wait=new WebDriverWait(driver, 10);
 		this.ParnetHome = driver.getWindowHandle();
 
-		this.test = "apple";
+		
+		
 	}
 
 	@AfterTest

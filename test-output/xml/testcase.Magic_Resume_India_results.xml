@@ -1,22 +1,72 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuite name="Firefox Result"
-           tests="10"
+           tests="20"
            failures="0"
            errors="0"
-           skipped="0"
-           time="56.625">
+           skipped="20"
+           time="0.003">
   <properties />
   
+            <testcase name="closeWindow" time="0.0" classname="testcase.Magic_Resume_India">
+          <skipped />
+    </testcase>
+            <testcase name="closeWindow" time="0.0" classname="testcase.Magic_Resume_India">
+          <skipped />
+    </testcase>
+            <testcase name="closeWindow" time="0.0" classname="testcase.Magic_Resume_India">
+          <skipped />
+    </testcase>
+            <testcase name="closeWindow" time="0.0" classname="testcase.Magic_Resume_India">
+          <skipped />
+    </testcase>
+            <testcase name="closeWindow" time="0.0" classname="testcase.Magic_Resume_India">
+          <skipped />
+    </testcase>
+            <testcase name="closeWindow" time="0.0" classname="testcase.Magic_Resume_India">
+          <skipped />
+    </testcase>
+            <testcase name="closeWindow" time="0.0" classname="testcase.Magic_Resume_India">
+          <skipped />
+    </testcase>
+            <testcase name="closeWindow" time="0.0" classname="testcase.Magic_Resume_India">
+          <skipped />
+    </testcase>
+            <testcase name="closeWindow" time="0.0" classname="testcase.Magic_Resume_India">
+          <skipped />
+    </testcase>
+            <testcase name="closeWindow" time="0.0" classname="testcase.Magic_Resume_India">
+          <skipped />
+    </testcase>
+            <testcase name="click_MR_Internation_Button" time="0.0" classname="testcase.Magic_Resume_India">
+          <skipped />
+    </testcase>
+            <testcase name="Click_MR_Internation_MidLevel_Tab" time="0.0" classname="testcase.Magic_Resume_India">
+          <skipped />
+    </testcase>
+            <testcase name="Click_MR_Internation_SeniorLevel_Tab" time="0.0" classname="testcase.Magic_Resume_India">
+          <skipped />
+    </testcase>
+            <testcase name="Click_MR_India_MidLevel_Tab" time="0.0" classname="testcase.Magic_Resume_India">
+          <skipped />
+    </testcase>
+            <testcase name="Click_MR_India_EntryLevel_Tab" time="0.0" classname="testcase.Magic_Resume_India">
+          <skipped />
+    </testcase>
+            <testcase name="click_MR_India_Button" time="0.0" classname="testcase.Magic_Resume_India">
+          <skipped />
+    </testcase>
+            <testcase name="Click_body_Improve_resume_Link" time="0.0" classname="testcase.Magic_Resume_India">
+          <skipped />
+    </testcase>
+            <testcase name="Click_MR_Internation_EntryLevel_Tab" time="0.0" classname="testcase.Magic_Resume_India">
+          <skipped />
+    </testcase>
+            <testcase name="click_improve_resume_lindia_ink" time="0.0" classname="testcase.Magic_Resume_India">
+          <skipped />
+    </testcase>
+            <testcase name="Click_MR_India_SeniorLevel_Tab" time="0.0" classname="testcase.Magic_Resume_India">
+          <skipped />
+    </testcase>
   
-            <testcase name="Click_MR_India_EntryLevel_Tab" time="3.190" classname="testcase.Magic_Resume_India" />
-                <testcase name="Click_MR_Internation_MidLevel_Tab" time="5.206" classname="testcase.Magic_Resume_India" />
-                <testcase name="click_improve_resume_lindia_ink" time="9.792" classname="testcase.Magic_Resume_India" />
-                <testcase name="Click_MR_India_MidLevel_Tab" time="3.955" classname="testcase.Magic_Resume_India" />
-                <testcase name="click_MR_India_Button" time="6.224" classname="testcase.Magic_Resume_India" />
-                <testcase name="click_MR_Internation_Button" time="3.837" classname="testcase.Magic_Resume_India" />
-                <testcase name="Click_MR_Internation_EntryLevel_Tab" time="1.475" classname="testcase.Magic_Resume_India" />
-                <testcase name="Click_body_Improve_resume_Link" time="12.486" classname="testcase.Magic_Resume_India" />
-                <testcase name="Click_MR_Internation_SeniorLevel_Tab" time="3.710" classname="testcase.Magic_Resume_India" />
-                <testcase name="Click_MR_India_SeniorLevel_Tab" time="6.750" classname="testcase.Magic_Resume_India" />
-      
+  
 </testsuite>

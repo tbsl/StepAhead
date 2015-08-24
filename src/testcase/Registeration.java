@@ -75,7 +75,7 @@ public class Registeration extends homepage {
 	@Test(priority=5,dataProvider="logout",dataProviderClass=Registeration_dp.class)
 	public void logout(int row,int col) throws InterruptedException
 	{
-	navigate("http://ecm.timesjobs.com/");
+	navigate(Navigate_Url);
 	Thread.sleep(3000);
 	new homepage_loggedin_o().open_Myaccount();
 	Thread.sleep(1000);
