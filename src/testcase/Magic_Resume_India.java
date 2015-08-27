@@ -87,6 +87,33 @@ public class Magic_Resume_India extends Magic_Resume_India_o{
 	sa.assertEquals(getTitle(),"Senior Level Professional Resume Writing Services for International Jobs | Magic Resume International");
 	}
 	
+	//Bussiness Logic
+	
+	
+	//@Test(priority=10,dataProvider="Click_MR_Internation_SeniorLevel_Tab",dataProviderClass=Magic_Resume_india_dp.class)
+	public void Purchase_MRI_0to1_Deliveryin_48(int row,int col) throws InterruptedException
+	{
+	
+	}
+	
+	
+	public void Purchase_MRI_0to1_Deliveryin_24(int row,int col) throws InterruptedException
+	{
+	
+	}
+	
+	public void Purchase_MRI_1to3_Deliveryin_48(int row,int col) throws InterruptedException
+	{
+	
+	}
+	
+	
+	public void Purchase_MRI_1to3_Deliveryin_24(int row,int col) throws InterruptedException
+	{
+	
+	}
+	
+	
 	
 	
 	

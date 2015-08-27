@@ -18,7 +18,7 @@ public class homepage extends Useractions{
 	public void close_contact_us() throws InterruptedException
 	{
 	click(new Homepage().Contact_US_toolbar_Close);
-	Thread.sleep(2000);
+	//Thread.sleep(2000);
 		
 	}
 	//SignIn#Registeration

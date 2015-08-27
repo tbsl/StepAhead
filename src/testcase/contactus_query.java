@@ -53,7 +53,7 @@ public class contactus_query extends homepage{
 	new homepage().open_contact_us();
 	new homepage().open_Leave_ur_Query();
 	new leave_your_query_o().queryvalidation();
-	Thread.sleep(1000);
+	//Thread.sleep(1000);
 	sa.assertEquals(gettext(new Leave_your_Query().name_error), "Enter Name");
 	sa.assertEquals(gettext(new Leave_your_Query().email_error), "Please enter a valid email address");
 	sa.assertEquals(gettext(new Leave_your_Query().phone_error), "Please enter Mobile No.");

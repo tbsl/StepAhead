@@ -4,13 +4,13 @@
            failures="0"
            errors="0"
            skipped="0"
-           time="17.911">
+           time="15.178">
   <properties />
   
   
-            <testcase name="submitQuery_Validations" time="7.548" classname="testcase.contactus_query" />
-                <testcase name="close_contact_us" time="2.394" classname="testcase.contactus_query" />
-                <testcase name="open_contact_us" time="0.534" classname="testcase.contactus_query" />
-                <testcase name="submitQuery" time="7.435" classname="testcase.contactus_query" />
+            <testcase name="submitQuery" time="7.138" classname="testcase.contactus_query" />
+                <testcase name="close_contact_us" time="0.649" classname="testcase.contactus_query" />
+                <testcase name="open_contact_us" time="0.696" classname="testcase.contactus_query" />
+                <testcase name="submitQuery_Validations" time="6.695" classname="testcase.contactus_query" />
       
 </testsuite>

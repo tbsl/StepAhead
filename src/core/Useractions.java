@@ -30,7 +30,7 @@ public class Useractions extends OpenandcloseBrowser{
 	public void click(By loc)
 		{
 		
-		Utility.getWebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(loc)).click();
+		Utility.getWebDriverWait(driver, 30).until(ExpectedConditions.elementToBeClickable(loc)).click();
 		//driver.findElement(loc).click();
 		}
 	
@@ -47,7 +47,10 @@ public class Useractions extends OpenandcloseBrowser{
 	
 	public String gettext(By loc)
 	{
-		return driver.findElement(loc).getText();
+		
+		return Utility.getWebDriverWait(driver,5).until(ExpectedConditions.visibilityOfElementLocated(loc)).getText();
+
+		//return driver.findElement(loc).getText();
 	}
 	
 	public String getActiveWindow()

@@ -14,7 +14,7 @@ public class homepage_loggedin_o extends Useractions{
 	
 	public void close_Myaccount() throws InterruptedException
 	{
-		Thread.sleep(1000);
+		//Thread.sleep(1000);
 	click(new Homepage_loggedin_e().barClose);
 	}
 	

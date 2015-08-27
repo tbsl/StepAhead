@@ -1,13 +1,16 @@
 package dataprovider;
 
 import java.io.IOException;
+import java.util.Random;
 
 import org.testng.annotations.DataProvider;
 
 import util.Excelhandler;
+import util.Utility;
 
 public class Registeration_dp {
 	
+	  final static String Email=Utility.getRandomEmail();
 	@DataProvider
 	public static Object[][] registeration_validations() throws IOException
 	{
@@ -32,7 +35,8 @@ public class Registeration_dp {
 		String inputdata=Excelhandler.readCell(14,6);
 		String[] inputvalues=inputdata.split(",");
 		String name=inputvalues[0];
-		String email=inputvalues[1];
+		String email=Email;
+		//String email=inputvalues[1];//Excel Based Email
 		String password=inputvalues[2];
 		String confirm_password=inputvalues[3];
 		String mobile=inputvalues[4];
@@ -50,7 +54,8 @@ public class Registeration_dp {
 		String inputdata=Excelhandler.readCell(14,6);
 		String[] inputvalues=inputdata.split(",");
 		String name=inputvalues[0];
-		String email=inputvalues[1];
+		String email=Email;
+		//String email=inputvalues[1];//Excel Based Email
 		String password=inputvalues[2];
 		//String confirm_password=inputvalues[3];
 		//String mobile=inputvalues[4];
@@ -81,10 +86,13 @@ public class Registeration_dp {
 		int out_col=Integer.parseInt(datavalues[1]);
 		String inputdata=Excelhandler.readCell(14,6);
 		String[] inputvalues=inputdata.split(",");
-		String email=inputvalues[1];
+		String email=Email;
+		//String email=inputvalues[1];//Excel Based Email
 		
 		return new Object[][]{{out_row,out_col,email}};
 		
 	}
+	
+	
 	
 }

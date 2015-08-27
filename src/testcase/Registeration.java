@@ -20,7 +20,7 @@ public class Registeration extends homepage {
 	@Test(priority=1,dataProvider="open_shutter_singnin",dataProviderClass=homepage_dp.class)
 	public void openRegisteration(int row,int col) throws InterruptedException
 	{
-	Thread.sleep(2000);	
+	//Thread.sleep(2000);	
 	new homepage().open_registeration();
 	sa.assertEquals(isPresent(new Homepage().Signin_email),true, "Email is not visible");
 	sa.assertEquals(isPresent(new Homepage().signin_password),true, "password is not visible");
