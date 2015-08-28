@@ -7,7 +7,7 @@ public class mailinator extends Useractions{
 	
 	public void openmail() throws InterruptedException
 	{
-		//Thread.sleep(3000);
+		Thread.sleep(3000);
 		click(new mailinator_e().Subject_click);
 	}
 

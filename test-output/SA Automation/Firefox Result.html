@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Firefox Result</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>31/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>30/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Wed Aug 26 16:58:00 IST 2015</td>
+<td>Started on:</td><td>Fri Aug 28 11:02:00 IST 2015</td>
 </tr>
-<tr><td>Total time:</td><td>315 seconds (315842 ms)</td>
+<tr><td>Total time:</td><td>330 seconds (330537 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,6 +67,132 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='testcase.Registeration.user_Registeration()'><b>user_Registeration</b><br>Test class: testcase.Registeration<br>Parameters: 14, 8, Sunil, 110794161@mailinator.com, f00bar12, f00bar12, 9910881849</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: Timed out after 30 seconds waiting for element to be clickable: By.xpath: .//*[@id=&apos;mailcontainer&apos;]/li/a/div[2]
+Build info: version: &apos;2.46.0&apos;, revision: &apos;87c69e2&apos;, time: &apos;2015-06-04 16:16:47&apos;
+System info: host: &apos;NODTBSD176AG&apos;, ip: &apos;10.150.240.220&apos;, os.name: &apos;Windows 8&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.2&apos;, java.version: &apos;1.6.0_45&apos;
+Session ID: 515084f2-e1b5-40ec-b9d0-aa4a5e52e045
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, browserName=firefox, rotatable=false, locationContextEnabled=true, version=33.0, cssSelectorsEnabled=true, databaseEnabled=true, handlesAlerts=true, nativeEvents=true, webStorageEnabled=true, applicationCacheEnabled=true, takesScreenshot=true}]
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:80)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:229)
+	at core.Useractions.click(Useractions.java:33)
+	at objects.mailinator.openmail(mailinator.java:11)
+	at testcase.Registeration.user_Registeration(Registeration.java:63)
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;.//*[@id=&apos;mailcontainer&apos;]/li/a/div[2]&quot;}
+Command duration or timeout: 15.13 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.46.0&apos;, revision: &apos;87c69e2&apos;, time: &apos;2015-06-04 16:16:47&apos;
+System info: host: &apos;NODTBSD176AG&apos;, ip: &apos;10.150.240.220&apos;, os.name: &apos;Windows 8&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.2&apos;, java.version: &apos;1.6.0_45&apos;
+*** Element info: {Using=xpath, value=.//*[@id=&apos;mailcontainer&apos;]/li/a/div[2]}
+Session ID: 515084f2-e1b5-40ec-b9d0-aa4a5e52e045
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, browserName=firefox, rotatable=false, locationContextEnabled=true, version=33.0, cssSelectorsEnabled=true, databaseEnabled=true, handlesAlerts=true, nativeEvents=true, webStorageEnabled=true, applicationCacheEnabled=true, takesScreenshot=true}]
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:605)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:358)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:455)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:358)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
+	at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:809)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$0(ExpectedConditions.java:807)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:1)
+	at org.openqa.selenium.support.ui.ExpectedConditions$20.apply(ExpectedConditions.java:603)
+	at org.openqa.selenium.support.ui.ExpectedConditions$20.apply(ExpectedConditions.java:1)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:209)
+	... 27 more
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;.//*[@id=&apos;mailcontainer&apos;]/li/a/div[2]&quot;}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.46.0&apos;, revision: &apos;87c69e2&apos;, time: &apos;2015-06-04 16:16:47&apos;
+System info: host: &apos;NODTBSD176AG&apos;, ip: &apos;10.150.240.220&apos;, os.name: &apos;Windows 8&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.2&apos;, java.version: &apos;1.6.0_45&apos;
+Driver info: driver.version: unknown
+	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/SUSHEE~1.THA/AppData/Local/Temp/anonymous7280199914186214180webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10299)
+	at &lt;anonymous class&gt;.fxdriver.Timer.prototype.setTimeout/&lt;.notify(file:///C:/Users/SUSHEE~1.THA/AppData/Local/Temp/anonymous7280199914186214180webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:603)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace442655177", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace442655177'><pre>org.openqa.selenium.TimeoutException: Timed out after 30 seconds waiting for element to be clickable: By.xpath: .//*[@id=&apos;mailcontainer&apos;]/li/a/div[2]
+Build info: version: &apos;2.46.0&apos;, revision: &apos;87c69e2&apos;, time: &apos;2015-06-04 16:16:47&apos;
+System info: host: &apos;NODTBSD176AG&apos;, ip: &apos;10.150.240.220&apos;, os.name: &apos;Windows 8&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.2&apos;, java.version: &apos;1.6.0_45&apos;
+Session ID: 515084f2-e1b5-40ec-b9d0-aa4a5e52e045
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, browserName=firefox, rotatable=false, locationContextEnabled=true, version=33.0, cssSelectorsEnabled=true, databaseEnabled=true, handlesAlerts=true, nativeEvents=true, webStorageEnabled=true, applicationCacheEnabled=true, takesScreenshot=true}]
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:80)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:229)
+	at core.Useractions.click(Useractions.java:33)
+	at objects.mailinator.openmail(mailinator.java:11)
+	at testcase.Registeration.user_Registeration(Registeration.java:63)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;.//*[@id=&apos;mailcontainer&apos;]/li/a/div[2]&quot;}
+Command duration or timeout: 15.13 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.46.0&apos;, revision: &apos;87c69e2&apos;, time: &apos;2015-06-04 16:16:47&apos;
+System info: host: &apos;NODTBSD176AG&apos;, ip: &apos;10.150.240.220&apos;, os.name: &apos;Windows 8&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.2&apos;, java.version: &apos;1.6.0_45&apos;
+*** Element info: {Using=xpath, value=.//*[@id=&apos;mailcontainer&apos;]/li/a/div[2]}
+Session ID: 515084f2-e1b5-40ec-b9d0-aa4a5e52e045
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, browserName=firefox, rotatable=false, locationContextEnabled=true, version=33.0, cssSelectorsEnabled=true, databaseEnabled=true, handlesAlerts=true, nativeEvents=true, webStorageEnabled=true, applicationCacheEnabled=true, takesScreenshot=true}]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:39)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:27)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:513)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:605)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:358)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:455)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:358)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
+	at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:809)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$0(ExpectedConditions.java:807)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:1)
+	at org.openqa.selenium.support.ui.ExpectedConditions$20.apply(ExpectedConditions.java:603)
+	at org.openqa.selenium.support.ui.ExpectedConditions$20.apply(ExpectedConditions.java:1)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:209)
+	... 27 more
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;.//*[@id=&apos;mailcontainer&apos;]/li/a/div[2]&quot;}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.46.0&apos;, revision: &apos;87c69e2&apos;, time: &apos;2015-06-04 16:16:47&apos;
+System info: host: &apos;NODTBSD176AG&apos;, ip: &apos;10.150.240.220&apos;, os.name: &apos;Windows 8&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.2&apos;, java.version: &apos;1.6.0_45&apos;
+Driver info: driver.version: unknown
+	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/SUSHEE~1.THA/AppData/Local/Temp/anonymous7280199914186214180webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10299)
+	at &lt;anonymous class&gt;.fxdriver.Timer.prototype.setTimeout/&lt;.notify(file:///C:/Users/SUSHEE~1.THA/AppData/Local/Temp/anonymous7280199914186214180webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:603)
+</pre></div></td>
+<td>43</td>
+<td>testcase.Registeration@163dc0bb</td></tr>
+</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -77,158 +203,153 @@ function toggleAllBoxes() {
 <tr>
 <td title='testcase.Improve_resume.Click_MRI()'><b>Click_MRI</b><br>Test class: testcase.Improve_resume<br>Parameters: 19, 8</td>
 <td></td>
-<td>8</td>
-<td>testcase.Improve_resume@26914f6a</td></tr>
+<td>6</td>
+<td>testcase.Improve_resume@46c837cd</td></tr>
 <tr>
 <td title='testcase.Magic_Resume_India.Click_MR_India_EntryLevel_Tab()'><b>Click_MR_India_EntryLevel_Tab</b><br>Test class: testcase.Magic_Resume_India<br>Parameters: 30, 8</td>
 <td></td>
-<td>4</td>
-<td>testcase.Magic_Resume_India@536c79d7</td></tr>
+<td>1</td>
+<td>testcase.Magic_Resume_India@2e297ffb</td></tr>
 <tr>
 <td title='testcase.Magic_Resume_India.Click_MR_India_MidLevel_Tab()'><b>Click_MR_India_MidLevel_Tab</b><br>Test class: testcase.Magic_Resume_India<br>Parameters: 31, 8</td>
 <td></td>
-<td>4</td>
-<td>testcase.Magic_Resume_India@536c79d7</td></tr>
+<td>5</td>
+<td>testcase.Magic_Resume_India@2e297ffb</td></tr>
 <tr>
 <td title='testcase.Magic_Resume_India.Click_MR_India_SeniorLevel_Tab()'><b>Click_MR_India_SeniorLevel_Tab</b><br>Test class: testcase.Magic_Resume_India<br>Parameters: 32, 8</td>
 <td></td>
-<td>9</td>
-<td>testcase.Magic_Resume_India@536c79d7</td></tr>
+<td>3</td>
+<td>testcase.Magic_Resume_India@2e297ffb</td></tr>
 <tr>
 <td title='testcase.Magic_Resume_India.Click_MR_Internation_EntryLevel_Tab()'><b>Click_MR_Internation_EntryLevel_Tab</b><br>Test class: testcase.Magic_Resume_India<br>Parameters: 34, 8</td>
 <td></td>
-<td>6</td>
-<td>testcase.Magic_Resume_India@536c79d7</td></tr>
+<td>2</td>
+<td>testcase.Magic_Resume_India@2e297ffb</td></tr>
 <tr>
 <td title='testcase.Magic_Resume_India.Click_MR_Internation_MidLevel_Tab()'><b>Click_MR_Internation_MidLevel_Tab</b><br>Test class: testcase.Magic_Resume_India<br>Parameters: 35, 8</td>
 <td></td>
-<td>8</td>
-<td>testcase.Magic_Resume_India@536c79d7</td></tr>
+<td>14</td>
+<td>testcase.Magic_Resume_India@2e297ffb</td></tr>
 <tr>
 <td title='testcase.Magic_Resume_India.Click_MR_Internation_SeniorLevel_Tab()'><b>Click_MR_Internation_SeniorLevel_Tab</b><br>Test class: testcase.Magic_Resume_India<br>Parameters: 36, 8</td>
 <td></td>
 <td>5</td>
-<td>testcase.Magic_Resume_India@536c79d7</td></tr>
+<td>testcase.Magic_Resume_India@2e297ffb</td></tr>
 <tr>
 <td title='testcase.Improve_resume.Click_MR_International()'><b>Click_MR_International</b><br>Test class: testcase.Improve_resume<br>Parameters: 20, 8</td>
 <td></td>
 <td>10</td>
-<td>testcase.Improve_resume@26914f6a</td></tr>
+<td>testcase.Improve_resume@46c837cd</td></tr>
 <tr>
 <td title='testcase.Magic_Resume_India.Click_body_Improve_resume_Link()'><b>Click_body_Improve_resume_Link</b><br>Test class: testcase.Magic_Resume_India<br>Parameters: 27, 8</td>
 <td></td>
 <td>10</td>
-<td>testcase.Magic_Resume_India@536c79d7</td></tr>
+<td>testcase.Magic_Resume_India@2e297ffb</td></tr>
 <tr>
 <td title='testcase.Improve_resume.Improve_Resume_hover()'><b>Improve_Resume_hover</b><br>Test class: testcase.Improve_resume<br>Parameters: 18, 8</td>
 <td></td>
-<td>12</td>
-<td>testcase.Improve_resume@26914f6a</td></tr>
+<td>13</td>
+<td>testcase.Improve_resume@46c837cd</td></tr>
 <tr>
-<td title='testcase.Registeration.Login()'><b>Login</b><br>Test class: testcase.Registeration<br>Parameters: 17, 8, 174412132@mailinator.com, f00bar12, Sunil</td>
+<td title='testcase.Registeration.Login()'><b>Login</b><br>Test class: testcase.Registeration<br>Parameters: 17, 8, 110794161@mailinator.com, f00bar12, Sunil</td>
 <td></td>
-<td>15</td>
-<td>testcase.Registeration@3295cfbe</td></tr>
+<td>14</td>
+<td>testcase.Registeration@163dc0bb</td></tr>
 <tr>
 <td title='testcase.Magic_Resume_India.click_MR_India_Button()'><b>click_MR_India_Button</b><br>Test class: testcase.Magic_Resume_India<br>Parameters: 29, 8</td>
 <td></td>
-<td>17</td>
-<td>testcase.Magic_Resume_India@536c79d7</td></tr>
+<td>14</td>
+<td>testcase.Magic_Resume_India@2e297ffb</td></tr>
 <tr>
 <td title='testcase.Magic_Resume_India.click_MR_Internation_Button()'><b>click_MR_Internation_Button</b><br>Test class: testcase.Magic_Resume_India<br>Parameters: 33, 8</td>
 <td></td>
-<td>2</td>
-<td>testcase.Magic_Resume_India@536c79d7</td></tr>
+<td>5</td>
+<td>testcase.Magic_Resume_India@2e297ffb</td></tr>
 <tr>
 <td title='testcase.Improve_resume.click_ResumeCritique()'><b>click_ResumeCritique</b><br>Test class: testcase.Improve_resume<br>Parameters: 21, 8</td>
 <td></td>
-<td>6</td>
-<td>testcase.Improve_resume@26914f6a</td></tr>
+<td>9</td>
+<td>testcase.Improve_resume@46c837cd</td></tr>
 <tr>
 <td title='testcase.Magic_Resume_India.click_improve_resume_lindia_ink()'><b>click_improve_resume_lindia_ink</b><br>Test class: testcase.Magic_Resume_India<br>Parameters: 28, 8</td>
 <td></td>
-<td>13</td>
-<td>testcase.Magic_Resume_India@536c79d7</td></tr>
+<td>14</td>
+<td>testcase.Magic_Resume_India@2e297ffb</td></tr>
 <tr>
 <td title='testcase.Improve_resume.click_socialprofiler()'><b>click_socialprofiler</b><br>Test class: testcase.Improve_resume<br>Parameters: 22, 8</td>
 <td></td>
-<td>6</td>
-<td>testcase.Improve_resume@26914f6a</td></tr>
+<td>8</td>
+<td>testcase.Improve_resume@46c837cd</td></tr>
 <tr>
 <td title='testcase.Improve_resume.click_view_all_services()'><b>click_view_all_services</b><br>Test class: testcase.Improve_resume<br>Parameters: 24, 8</td>
 <td></td>
-<td>10</td>
-<td>testcase.Improve_resume@26914f6a</td></tr>
+<td>8</td>
+<td>testcase.Improve_resume@46c837cd</td></tr>
 <tr>
 <td title='testcase.Improve_resume.click_view_sample_resume()'><b>click_view_sample_resume</b><br>Test class: testcase.Improve_resume<br>Parameters: 25, 8</td>
 <td></td>
 <td>6</td>
-<td>testcase.Improve_resume@26914f6a</td></tr>
+<td>testcase.Improve_resume@46c837cd</td></tr>
 <tr>
 <td title='testcase.Improve_resume.click_visual_resume()'><b>click_visual_resume</b><br>Test class: testcase.Improve_resume<br>Parameters: 26, 8</td>
 <td></td>
-<td>12</td>
-<td>testcase.Improve_resume@26914f6a</td></tr>
+<td>6</td>
+<td>testcase.Improve_resume@46c837cd</td></tr>
 <tr>
 <td title='testcase.Improve_resume.click_visual_resume_premium()'><b>click_visual_resume_premium</b><br>Test class: testcase.Improve_resume<br>Parameters: 23, 8</td>
 <td></td>
-<td>4</td>
-<td>testcase.Improve_resume@26914f6a</td></tr>
+<td>8</td>
+<td>testcase.Improve_resume@46c837cd</td></tr>
 <tr>
 <td title='testcase.Registeration.closeRegisteration_Shutter()'><b>closeRegisteration_Shutter</b><br>Test class: testcase.Registeration<br>Parameters: 12, 8</td>
 <td></td>
 <td>3</td>
-<td>testcase.Registeration@3295cfbe</td></tr>
+<td>testcase.Registeration@163dc0bb</td></tr>
 <tr>
 <td title='testcase.contactus_query.close_contact_us()'><b>close_contact_us</b><br>Test class: testcase.contactus_query<br>Parameters: 7, 8</td>
 <td></td>
 <td>0</td>
-<td>testcase.contactus_query@163dc0bb</td></tr>
+<td>testcase.contactus_query@203fa5ac</td></tr>
 <tr>
-<td title='testcase.Registeration.forgetPassword()'><b>forgetPassword</b><br>Test class: testcase.Registeration<br>Parameters: 16, 8, 174412132@mailinator.com</td>
+<td title='testcase.Registeration.forgetPassword()'><b>forgetPassword</b><br>Test class: testcase.Registeration<br>Parameters: 16, 8, 110794161@mailinator.com</td>
 <td></td>
-<td>36</td>
-<td>testcase.Registeration@3295cfbe</td></tr>
+<td>33</td>
+<td>testcase.Registeration@163dc0bb</td></tr>
 <tr>
-<td title='testcase.Registeration.forget_pwd_email_verification()'><b>forget_pwd_email_verification</b><br>Test class: testcase.Registeration<br>Parameters: 16, 8, 174412132@mailinator.com</td>
+<td title='testcase.Registeration.forget_pwd_email_verification()'><b>forget_pwd_email_verification</b><br>Test class: testcase.Registeration<br>Parameters: 16, 8, 110794161@mailinator.com</td>
 <td></td>
-<td>3</td>
-<td>testcase.Registeration@3295cfbe</td></tr>
+<td>5</td>
+<td>testcase.Registeration@163dc0bb</td></tr>
 <tr>
 <td title='testcase.Registeration.logout()'><b>logout</b><br>Test class: testcase.Registeration<br>Parameters: 15, 8</td>
 <td></td>
-<td>10</td>
-<td>testcase.Registeration@3295cfbe</td></tr>
+<td>17</td>
+<td>testcase.Registeration@163dc0bb</td></tr>
 <tr>
 <td title='testcase.Registeration.openRegisteration()'><b>openRegisteration</b><br>Test class: testcase.Registeration<br>Parameters: 10, 8</td>
 <td></td>
 <td>2</td>
-<td>testcase.Registeration@3295cfbe</td></tr>
+<td>testcase.Registeration@163dc0bb</td></tr>
 <tr>
 <td title='testcase.contactus_query.open_contact_us()'><b>open_contact_us</b><br>Test class: testcase.contactus_query<br>Parameters: 5, 8</td>
 <td></td>
 <td>0</td>
-<td>testcase.contactus_query@163dc0bb</td></tr>
+<td>testcase.contactus_query@203fa5ac</td></tr>
 <tr>
 <td title='testcase.contactus_query.submitQuery()'><b>submitQuery</b><br>Test class: testcase.contactus_query<br>Parameters: 9, 8, Sunil, sunil211@mailinator.com, 9910881849, Great Guys keep it up</td>
 <td></td>
-<td>7</td>
-<td>testcase.contactus_query@163dc0bb</td></tr>
+<td>6</td>
+<td>testcase.contactus_query@203fa5ac</td></tr>
 <tr>
 <td title='testcase.contactus_query.submitQuery_Validations()'><b>submitQuery_Validations</b><br>Test class: testcase.contactus_query<br>Parameters: 8, 8</td>
 <td></td>
 <td>6</td>
-<td>testcase.contactus_query@163dc0bb</td></tr>
-<tr>
-<td title='testcase.Registeration.user_Registeration()'><b>user_Registeration</b><br>Test class: testcase.Registeration<br>Parameters: 14, 8, Sunil, 174412132@mailinator.com, f00bar12, f00bar12, 9910881849</td>
-<td></td>
-<td>28</td>
-<td>testcase.Registeration@3295cfbe</td></tr>
+<td>testcase.contactus_query@203fa5ac</td></tr>
 <tr>
 <td title='testcase.Registeration.user_Registeration_Validations()'><b>user_Registeration_Validations</b><br>Test class: testcase.Registeration<br>Parameters: 13, 8</td>
 <td></td>
 <td>12</td>
-<td>testcase.Registeration@3295cfbe</td></tr>
+<td>testcase.Registeration@163dc0bb</td></tr>
 </table><p>
 </body>
 </html>

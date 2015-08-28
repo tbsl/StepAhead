@@ -4,18 +4,18 @@
            failures="0"
            errors="0"
            skipped="0"
-           time="78.479">
+           time="78.573">
   <properties />
   
   
-            <testcase name="click_view_sample_resume" time="6.357" classname="testcase.Improve_resume" />
-                <testcase name="click_visual_resume" time="12.959" classname="testcase.Improve_resume" />
-                <testcase name="Click_MRI" time="8.367" classname="testcase.Improve_resume" />
-                <testcase name="click_ResumeCritique" time="6.024" classname="testcase.Improve_resume" />
-                <testcase name="click_view_all_services" time="10.894" classname="testcase.Improve_resume" />
-                <testcase name="Improve_Resume_hover" time="12.975" classname="testcase.Improve_resume" />
-                <testcase name="click_socialprofiler" time="6.198" classname="testcase.Improve_resume" />
-                <testcase name="Click_MR_International" time="10.328" classname="testcase.Improve_resume" />
-                <testcase name="click_visual_resume_premium" time="4.377" classname="testcase.Improve_resume" />
+            <testcase name="click_ResumeCritique" time="9.477" classname="testcase.Improve_resume" />
+                <testcase name="click_visual_resume" time="6.642" classname="testcase.Improve_resume" />
+                <testcase name="Click_MR_International" time="10.830" classname="testcase.Improve_resume" />
+                <testcase name="click_view_sample_resume" time="6.326" classname="testcase.Improve_resume" />
+                <testcase name="Click_MRI" time="6.446" classname="testcase.Improve_resume" />
+                <testcase name="click_view_all_services" time="8.181" classname="testcase.Improve_resume" />
+                <testcase name="click_visual_resume_premium" time="8.242" classname="testcase.Improve_resume" />
+                <testcase name="Improve_Resume_hover" time="13.526" classname="testcase.Improve_resume" />
+                <testcase name="click_socialprofiler" time="8.903" classname="testcase.Improve_resume" />
       
 </testsuite>
