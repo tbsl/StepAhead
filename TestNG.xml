@@ -7,14 +7,16 @@
       <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
   </listeners>
   
-	    <parameter name="browser" value="FIREFOX"/> 
-  		<parameter name="baseURL" value="http://ecm.timesjobs.com/"/> 
+	    <parameter name="browser" value="CHROME"/> 
+  		<parameter name="baseURL" value="http://stepahead.timesjobs.com/"/> 
   		<parameter name="TestCase" value="TestCases.xslx"/> 
   		<classes>      		
- 	 			 	<class name="testcase.contactus_query"/> 
-	      	    	<class name="testcase.Registeration"/> 
-      		      	<class name="testcase.Improve_resume"/> 
-      		     	<class name="testcase.Magic_Resume_India"/>
+  	 			 	<class name="testcase.contactus_query"/> 
+   	      	    	<class name="testcase.Registeration"/> 
+
+ 
+     		      	<!--  <class name="testcase.Improve_resume"/>
+       		     	<class name="testcase.Magic_Resume_India"/> -->
       	
       	</classes>
 	</test>

@@ -23,7 +23,7 @@ public class Improve_resume extends Improve_resume_o {
 	 * new homepage().open_registeration(); new homepage().login(email, pwd); }
 	 */
 
-	@Test(priority = 2, dataProvider = "improve_resume_hover", dataProviderClass = Improve_resume_dp.class)
+@Test(priority = 2, dataProvider = "improve_resume_hover", dataProviderClass = Improve_resume_dp.class)
 	public void Improve_Resume_hover(int row, int col)
 			throws InterruptedException {
 		
@@ -43,9 +43,7 @@ public class Improve_resume extends Improve_resume_o {
 				"View All services is not visible");
 		sa.assertEquals(isPresent(new Improve_resume_e().m_VRP), true,
 				"Visual Resume Premium is not visible");
-		sa.assertEquals(isPresent(new Improve_resume_e().m_VSR), true,
-				"View sample Resume is not visible");
-		sa.assertAll();
+				sa.assertAll();
 	}
 
 	@Test(priority = 3, dataProvider = "click_mri", dataProviderClass = Improve_resume_dp.class)
@@ -124,7 +122,7 @@ public class Improve_resume extends Improve_resume_o {
 				"View All Service page is not opened");
 	}
 
-	@Test(priority = 10, dataProvider = "click_view_on_samples", dataProviderClass = Improve_resume_dp.class)
+	//@Test(priority = 10, dataProvider = "click_view_on_samples", dataProviderClass = Improve_resume_dp.class)
 	public void click_view_sample_resume(int row, int col)
 			throws InterruptedException {
 		new Improve_resume_o().improve_resume_mouseHover();

@@ -12,432 +12,15 @@
 <body>
 <h1>Firefox Result</h1>
 <p>
-  Test duration: 324.504s
+  Test duration: 54.709s
 </p>
 
 
 
-  <table class="resultsTable">
-    <tr><th colspan="3" class="header failed">Failed Tests</th></tr>
-          <tr>
-        <td colspan="3" class="group">testcase.Registeration</td>
-      </tr>
-            
-<tr>
-  <td class="method">
-                  user_Registeration
-      </td>
-  <td class="duration">
-    43.094s
-  </td>
-  <td class="result">
-        
-          <i>Method arguments: </i><span class="arguments">14, 8, "Sunil", "110794161@mailinator.com", "f00bar12", "f00bar12", "9910881849"</span><br />
-    
-        
-
-        <a href="javascript:toggleElement('exception-0', 'block')" title="Click to expand/collapse"><b>org.openqa.selenium.TimeoutException: Timed out after 30 seconds waiting for element to be clickable: By.xpath: .//*[@id=&apos;mailcontainer&apos;]/li/a/div[2]<br/>
-Build info: version: &apos;2.46.0&apos;, revision: &apos;87c69e2&apos;, time: &apos;2015-06-04 16:16:47&apos;<br/>
-System info: host: &apos;NODTBSD176AG&apos;, ip: &apos;10.150.240.220&apos;, os.name: &apos;Windows 8&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.2&apos;, java.version: &apos;1.6.0_45&apos;<br/>
-Session ID: 515084f2-e1b5-40ec-b9d0-aa4a5e52e045<br/>
-Driver info: org.openqa.selenium.firefox.FirefoxDriver<br/>
-Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, browserName=firefox, rotatable=false, locationContextEnabled=true, version=33.0, cssSelectorsEnabled=true, databaseEnabled=true, handlesAlerts=true, nativeEvents=true, webStorageEnabled=true, applicationCacheEnabled=true, takesScreenshot=true}]</b></a><br />
-    <div class="stackTrace" id="exception-0">
-              org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:80)<br />
-              org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:229)<br />
-              core.Useractions.click(Useractions.java:33)<br />
-              objects.mailinator.openmail(mailinator.java:11)<br />
-              testcase.Registeration.user_Registeration(Registeration.java:63)<br />
-              sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
-              sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)<br />
-              sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)<br />
-              java.lang.reflect.Method.invoke(Method.java:597)<br />
-              org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)<br />
-              org.testng.internal.Invoker.invokeMethod(Invoker.java:714)<br />
-              org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)<br />
-              org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)<br />
-              org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)<br />
-              org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)<br />
-              org.testng.TestRunner.privateRun(TestRunner.java:767)<br />
-              org.testng.TestRunner.run(TestRunner.java:617)<br />
-              org.testng.SuiteRunner.runTest(SuiteRunner.java:334)<br />
-              org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)<br />
-              org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)<br />
-              org.testng.SuiteRunner.run(SuiteRunner.java:240)<br />
-              org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br />
-              org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)<br />
-              org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)<br />
-              org.testng.TestNG.runSuitesLocally(TestNG.java:1149)<br />
-              org.testng.TestNG.run(TestNG.java:1057)<br />
-              org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)<br />
-              org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)<br />
-              org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)<br />
-                    <b>Caused by: </b> <a href="javascript:toggleElement('exception-1', 'block')" title="Click to expand/collapse">org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;.//*[@id=&apos;mailcontainer&apos;]/li/a/div[2]&quot;}<br/>
-Command duration or timeout: 15.13 seconds<br/>
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html<br/>
-Build info: version: &apos;2.46.0&apos;, revision: &apos;87c69e2&apos;, time: &apos;2015-06-04 16:16:47&apos;<br/>
-System info: host: &apos;NODTBSD176AG&apos;, ip: &apos;10.150.240.220&apos;, os.name: &apos;Windows 8&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.2&apos;, java.version: &apos;1.6.0_45&apos;<br/>
-*** Element info: {Using=xpath, value=.//*[@id=&apos;mailcontainer&apos;]/li/a/div[2]}<br/>
-Session ID: 515084f2-e1b5-40ec-b9d0-aa4a5e52e045<br/>
-Driver info: org.openqa.selenium.firefox.FirefoxDriver<br/>
-Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, browserName=firefox, rotatable=false, locationContextEnabled=true, version=33.0, cssSelectorsEnabled=true, databaseEnabled=true, handlesAlerts=true, nativeEvents=true, webStorageEnabled=true, applicationCacheEnabled=true, takesScreenshot=true}]</a><br />
-        <div class="stackTrace" id="exception-1">
-                      sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)<br />
-                      sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:39)<br />
-                      sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:27)<br />
-                      java.lang.reflect.Constructor.newInstance(Constructor.java:513)<br />
-                      org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)<br />
-                      org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)<br />
-                      org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:605)<br />
-                      org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:358)<br />
-                      org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:455)<br />
-                      org.openqa.selenium.By$ByXPath.findElement(By.java:358)<br />
-                      org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)<br />
-                      org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:809)<br />
-                      org.openqa.selenium.support.ui.ExpectedConditions.access$0(ExpectedConditions.java:807)<br />
-                      org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)<br />
-                      org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:1)<br />
-                      org.openqa.selenium.support.ui.ExpectedConditions$20.apply(ExpectedConditions.java:603)<br />
-                      org.openqa.selenium.support.ui.ExpectedConditions$20.apply(ExpectedConditions.java:1)<br />
-                      org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:209)<br />
-                      core.Useractions.click(Useractions.java:33)<br />
-                      objects.mailinator.openmail(mailinator.java:11)<br />
-                      testcase.Registeration.user_Registeration(Registeration.java:63)<br />
-                      sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
-                      sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)<br />
-                      sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)<br />
-                      java.lang.reflect.Method.invoke(Method.java:597)<br />
-                      org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)<br />
-                      org.testng.internal.Invoker.invokeMethod(Invoker.java:714)<br />
-                      org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)<br />
-                      org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)<br />
-                      org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)<br />
-                      org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)<br />
-                      org.testng.TestRunner.privateRun(TestRunner.java:767)<br />
-                      org.testng.TestRunner.run(TestRunner.java:617)<br />
-                      org.testng.SuiteRunner.runTest(SuiteRunner.java:334)<br />
-                      org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)<br />
-                      org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)<br />
-                      org.testng.SuiteRunner.run(SuiteRunner.java:240)<br />
-                      org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br />
-                      org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)<br />
-                      org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)<br />
-                      org.testng.TestNG.runSuitesLocally(TestNG.java:1149)<br />
-                      org.testng.TestNG.run(TestNG.java:1057)<br />
-                      org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)<br />
-                      org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)<br />
-                      org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)<br />
-                  </div>
-              <b>Caused by: </b> <a href="javascript:toggleElement('exception-2', 'block')" title="Click to expand/collapse">org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;.//*[@id=&apos;mailcontainer&apos;]/li/a/div[2]&quot;}<br/>
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html<br/>
-Build info: version: &apos;2.46.0&apos;, revision: &apos;87c69e2&apos;, time: &apos;2015-06-04 16:16:47&apos;<br/>
-System info: host: &apos;NODTBSD176AG&apos;, ip: &apos;10.150.240.220&apos;, os.name: &apos;Windows 8&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.2&apos;, java.version: &apos;1.6.0_45&apos;<br/>
-Driver info: driver.version: unknown</a><br />
-        <div class="stackTrace" id="exception-2">
-                      &lt;anonymous class&gt;.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/SUSHEE~1.THA/AppData/Local/Temp/anonymous7280199914186214180webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10299)<br />
-                      &lt;anonymous class&gt;.fxdriver.Timer.prototype.setTimeout/&lt;.notify(file:///C:/Users/SUSHEE~1.THA/AppData/Local/Temp/anonymous7280199914186214180webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:603)<br />
-                  </div>
-          </div>
-      </td>
-</tr>
-      </table>
 
 
   <table class="resultsTable">
     <tr><th colspan="3" class="header passed">Passed Tests</th></tr>
-          <tr>
-        <td colspan="3" class="group">testcase.Improve_resume</td>
-      </tr>
-            
-<tr>
-  <td class="method">
-                  Click_MRI
-      </td>
-  <td class="duration">
-    6.446s
-  </td>
-  <td class="result">
-        
-          <i>Method arguments: </i><span class="arguments">19, 8</span><br />
-    
-        
-
-      </td>
-</tr>
-<tr>
-  <td class="method">
-                  Click_MR_International
-      </td>
-  <td class="duration">
-    10.830s
-  </td>
-  <td class="result">
-        
-          <i>Method arguments: </i><span class="arguments">20, 8</span><br />
-    
-        
-
-      </td>
-</tr>
-<tr>
-  <td class="method">
-                  Improve_Resume_hover
-      </td>
-  <td class="duration">
-    13.526s
-  </td>
-  <td class="result">
-        
-          <i>Method arguments: </i><span class="arguments">18, 8</span><br />
-    
-        
-
-      </td>
-</tr>
-<tr>
-  <td class="method">
-                  click_ResumeCritique
-      </td>
-  <td class="duration">
-    9.477s
-  </td>
-  <td class="result">
-        
-          <i>Method arguments: </i><span class="arguments">21, 8</span><br />
-    
-        
-
-      </td>
-</tr>
-<tr>
-  <td class="method">
-                  click_socialprofiler
-      </td>
-  <td class="duration">
-    8.903s
-  </td>
-  <td class="result">
-        
-          <i>Method arguments: </i><span class="arguments">22, 8</span><br />
-    
-        
-
-      </td>
-</tr>
-<tr>
-  <td class="method">
-                  click_view_all_services
-      </td>
-  <td class="duration">
-    8.181s
-  </td>
-  <td class="result">
-        
-          <i>Method arguments: </i><span class="arguments">24, 8</span><br />
-    
-        
-
-      </td>
-</tr>
-<tr>
-  <td class="method">
-                  click_view_sample_resume
-      </td>
-  <td class="duration">
-    6.326s
-  </td>
-  <td class="result">
-        
-          <i>Method arguments: </i><span class="arguments">25, 8</span><br />
-    
-        
-
-      </td>
-</tr>
-<tr>
-  <td class="method">
-                  click_visual_resume
-      </td>
-  <td class="duration">
-    6.642s
-  </td>
-  <td class="result">
-        
-          <i>Method arguments: </i><span class="arguments">26, 8</span><br />
-    
-        
-
-      </td>
-</tr>
-<tr>
-  <td class="method">
-                  click_visual_resume_premium
-      </td>
-  <td class="duration">
-    8.242s
-  </td>
-  <td class="result">
-        
-          <i>Method arguments: </i><span class="arguments">23, 8</span><br />
-    
-        
-
-      </td>
-</tr>
-          <tr>
-        <td colspan="3" class="group">testcase.Magic_Resume_India</td>
-      </tr>
-            
-<tr>
-  <td class="method">
-                  Click_MR_India_EntryLevel_Tab
-      </td>
-  <td class="duration">
-    1.045s
-  </td>
-  <td class="result">
-        
-          <i>Method arguments: </i><span class="arguments">30, 8</span><br />
-    
-        
-
-      </td>
-</tr>
-<tr>
-  <td class="method">
-                  Click_MR_India_MidLevel_Tab
-      </td>
-  <td class="duration">
-    5.038s
-  </td>
-  <td class="result">
-        
-          <i>Method arguments: </i><span class="arguments">31, 8</span><br />
-    
-        
-
-      </td>
-</tr>
-<tr>
-  <td class="method">
-                  Click_MR_India_SeniorLevel_Tab
-      </td>
-  <td class="duration">
-    3.298s
-  </td>
-  <td class="result">
-        
-          <i>Method arguments: </i><span class="arguments">32, 8</span><br />
-    
-        
-
-      </td>
-</tr>
-<tr>
-  <td class="method">
-                  Click_MR_Internation_EntryLevel_Tab
-      </td>
-  <td class="duration">
-    2.366s
-  </td>
-  <td class="result">
-        
-          <i>Method arguments: </i><span class="arguments">34, 8</span><br />
-    
-        
-
-      </td>
-</tr>
-<tr>
-  <td class="method">
-                  Click_MR_Internation_MidLevel_Tab
-      </td>
-  <td class="duration">
-    14.657s
-  </td>
-  <td class="result">
-        
-          <i>Method arguments: </i><span class="arguments">35, 8</span><br />
-    
-        
-
-      </td>
-</tr>
-<tr>
-  <td class="method">
-                  Click_MR_Internation_SeniorLevel_Tab
-      </td>
-  <td class="duration">
-    5.991s
-  </td>
-  <td class="result">
-        
-          <i>Method arguments: </i><span class="arguments">36, 8</span><br />
-    
-        
-
-      </td>
-</tr>
-<tr>
-  <td class="method">
-                  Click_body_Improve_resume_Link
-      </td>
-  <td class="duration">
-    10.580s
-  </td>
-  <td class="result">
-        
-          <i>Method arguments: </i><span class="arguments">27, 8</span><br />
-    
-        
-
-      </td>
-</tr>
-<tr>
-  <td class="method">
-                  click_MR_India_Button
-      </td>
-  <td class="duration">
-    14.364s
-  </td>
-  <td class="result">
-        
-          <i>Method arguments: </i><span class="arguments">29, 8</span><br />
-    
-        
-
-      </td>
-</tr>
-<tr>
-  <td class="method">
-                  click_MR_Internation_Button
-      </td>
-  <td class="duration">
-    5.870s
-  </td>
-  <td class="result">
-        
-          <i>Method arguments: </i><span class="arguments">33, 8</span><br />
-    
-        
-
-      </td>
-</tr>
-<tr>
-  <td class="method">
-                  click_improve_resume_lindia_ink
-      </td>
-  <td class="duration">
-    14.961s
-  </td>
-  <td class="result">
-        
-          <i>Method arguments: </i><span class="arguments">28, 8</span><br />
-    
-        
-
-      </td>
-</tr>
           <tr>
         <td colspan="3" class="group">testcase.Registeration</td>
       </tr>
@@ -447,56 +30,11 @@ Driver info: driver.version: unknown</a><br />
                   Login
       </td>
   <td class="duration">
-    14.171s
+    15.435s
   </td>
   <td class="result">
         
-          <i>Method arguments: </i><span class="arguments">17, 8, "110794161@mailinator.com", "f00bar12", "Sunil"</span><br />
-    
-        
-
-      </td>
-</tr>
-<tr>
-  <td class="method">
-                  closeRegisteration_Shutter
-      </td>
-  <td class="duration">
-    3.394s
-  </td>
-  <td class="result">
-        
-          <i>Method arguments: </i><span class="arguments">12, 8</span><br />
-    
-        
-
-      </td>
-</tr>
-<tr>
-  <td class="method">
-                  forgetPassword
-      </td>
-  <td class="duration">
-    33.241s
-  </td>
-  <td class="result">
-        
-          <i>Method arguments: </i><span class="arguments">16, 8, "110794161@mailinator.com"</span><br />
-    
-        
-
-      </td>
-</tr>
-<tr>
-  <td class="method">
-                  forget_pwd_email_verification
-      </td>
-  <td class="duration">
-    5.453s
-  </td>
-  <td class="result">
-        
-          <i>Method arguments: </i><span class="arguments">16, 8, "110794161@mailinator.com"</span><br />
+          <i>Method arguments: </i><span class="arguments">17, 8, "445306793@mailinator.com", "f00bar12", "Sunil"</span><br />
     
         
 
@@ -507,7 +45,7 @@ Driver info: driver.version: unknown</a><br />
                   logout
       </td>
   <td class="duration">
-    17.549s
+    5.852s
   </td>
   <td class="result">
         
@@ -519,29 +57,14 @@ Driver info: driver.version: unknown</a><br />
 </tr>
 <tr>
   <td class="method">
-                  openRegisteration
+                  user_Registeration
       </td>
   <td class="duration">
-    2.308s
+    12.994s
   </td>
   <td class="result">
         
-          <i>Method arguments: </i><span class="arguments">10, 8</span><br />
-    
-        
-
-      </td>
-</tr>
-<tr>
-  <td class="method">
-                  user_Registeration_Validations
-      </td>
-  <td class="duration">
-    12.017s
-  </td>
-  <td class="result">
-        
-          <i>Method arguments: </i><span class="arguments">13, 8</span><br />
+          <i>Method arguments: </i><span class="arguments">14, 8, "Sunil", "445306793@mailinator.com", "f00bar12", "f00bar12", "9910881849"</span><br />
     
         
 
@@ -553,59 +76,14 @@ Driver info: driver.version: unknown</a><br />
             
 <tr>
   <td class="method">
-                  close_contact_us
-      </td>
-  <td class="duration">
-    0.429s
-  </td>
-  <td class="result">
-        
-          <i>Method arguments: </i><span class="arguments">7, 8</span><br />
-    
-        
-
-      </td>
-</tr>
-<tr>
-  <td class="method">
-                  open_contact_us
-      </td>
-  <td class="duration">
-    0.884s
-  </td>
-  <td class="result">
-        
-          <i>Method arguments: </i><span class="arguments">5, 8</span><br />
-    
-        
-
-      </td>
-</tr>
-<tr>
-  <td class="method">
                   submitQuery
       </td>
   <td class="duration">
-    6.004s
+    6.906s
   </td>
   <td class="result">
         
-          <i>Method arguments: </i><span class="arguments">9, 8, "Sunil", "sunil211@mailinator.com", "9910881849", "Great Guys keep it up"</span><br />
-    
-        
-
-      </td>
-</tr>
-<tr>
-  <td class="method">
-                  submitQuery_Validations
-      </td>
-  <td class="duration">
-    6.870s
-  </td>
-  <td class="result">
-        
-          <i>Method arguments: </i><span class="arguments">8, 8</span><br />
+          <i>Method arguments: </i><span class="arguments">9, 8, "Sunil", "sunil211@mailinator.com", "7838877189", "Testing  Platform please ignore this query"</span><br />
     
         
 

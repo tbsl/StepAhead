@@ -17,7 +17,7 @@ public class Leave_your_Query {
 	
 	public By SubmitQuery_btn=By.xpath(".//input[@value='Submit Query']");
 	public By pageheader=By.xpath("//h1[.='Leave Your Query']");
-	public By Query_Feedback=By.xpath("//h4[.='Thank you for submitting your query.We will get back to you shortly.']");
+	public By Query_Feedback=By.xpath("html/body/div[1]/div[2]/div[1]/div[2]/div[1]/div/div[1]/p");
 	
 	public By Request_CallBack=By.xpath("//a[.='Request a Call back']");
 	public By RCB_Name=By.id("name_header");

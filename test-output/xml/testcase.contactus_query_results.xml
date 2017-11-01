@@ -1,16 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuite name="Firefox Result"
-           tests="4"
+           tests="1"
            failures="0"
            errors="0"
            skipped="0"
-           time="14.187">
+           time="6.906">
   <properties />
   
   
-            <testcase name="submitQuery" time="6.004" classname="testcase.contactus_query" />
-                <testcase name="close_contact_us" time="0.429" classname="testcase.contactus_query" />
-                <testcase name="submitQuery_Validations" time="6.870" classname="testcase.contactus_query" />
-                <testcase name="open_contact_us" time="0.884" classname="testcase.contactus_query" />
+            <testcase name="submitQuery" time="6.906" classname="testcase.contactus_query" />
       
 </testsuite>

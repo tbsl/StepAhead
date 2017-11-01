@@ -20,7 +20,7 @@ public class Homepage_loggedin_e {
 	
 	
 	
-	public By Improve_Resume_menu=By.xpath("//div[@class='home_midAlign']/ul/li/a[.='Improve Resume']");
+	public By Improve_Resume_menu=By.xpath("html/body/div[1]/div[1]/div[3]/header/div[2]/div/ul/li[1]/a");
 	
 	public By Magic_Resume_India=By.xpath("//a[.='Magic Resume India']");
 	

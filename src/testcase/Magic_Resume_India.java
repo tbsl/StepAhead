@@ -19,7 +19,7 @@ public class Magic_Resume_India extends Magic_Resume_India_o{
 	sa.assertEquals(getTitle(),"Resume Improvement | Professional Resume Writing | StepAhead","You are on Wrong PAGE");
 	}
 	
-	@Test(priority=2,dataProvider="click_improve_resume_lindia_ink",dataProviderClass=Magic_Resume_india_dp.class)
+	//@Test(priority=2,dataProvider="click_improve_resume_lindia_ink",dataProviderClass=Magic_Resume_india_dp.class)
 	public void click_improve_resume_lindia_ink(int row,int col) throws InterruptedException
 	{
 	new Improve_resume_o().improve_resume_mouseHover();

@@ -56,7 +56,7 @@ public class OpenandcloseBrowser {
 
 	@AfterTest
 	public void closeBrowser() {
-		driver.close();
+		//driver.close();
 		System.out.println("DRIVER CLOSING COMMAND");
 	}
 
